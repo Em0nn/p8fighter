@@ -1,0 +1,289 @@
+# depslib dependency file v1.0
+1490178265 source:/home/nosedoin/Bureau/P8_Fighter/Version txt/src/Combat.cpp
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490636283 source:/home/nosedoin/Bureau/P8_Fighter/Version txt/src/main.cpp
+	<iostream>
+	<cassert>
+	"Rectangle.h"
+	"Environnement.h"
+	"Zone.h"
+	"winTxt.h"
+	"unistd.h"
+	<stdlib.h>
+	"Point.h"
+
+1490636531 /home/nosedoin/Bureau/P8_Fighter/Version txt/src/Rectangle.h
+	"Point.h"
+
+1490642469 /home/nosedoin/Bureau/P8_Fighter/Version txt/src/Zone.h
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490646110 source:/home/nosedoin/Bureau/P8_Fighter/Version txt/src/Rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490646327 source:/home/nosedoin/Bureau/P8_Fighter/Version txt/src/Zone.cpp
+	"Zone.h"
+	<iostream>
+
+1490645778 source:/home/nosedoin/Bureau/P8_Fighter/Version txt/src/Environnement.cpp
+	"Environnement.h"
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490642711 /home/nosedoin/Bureau/P8_Fighter/Version txt/src/Environnement.h
+	<string.h>
+	"Zone.h"
+
+1490635938 /home/nosedoin/Bureau/P8_Fighter/Version txt/src/Point.h
+	<iostream>
+
+1490644682 source:/home/nosedoin/Bureau/P8_Fighter/Version txt/src/Point.cpp
+	"Point.h"
+	<cassert>
+	<iostream>
+
+1490546068 /home/nosedoin/Bureau/P8_Fighter/Version txt/src/winTxt.h
+
+1488131334 source:/home/nosedoin/Bureau/P8_Fighter/Version txt/src/winTxt.cpp
+	"winTxt.h"
+	<cassert>
+	<stdlib.h>
+	<stdarg.h>
+	<iostream>
+	<stdio.h>
+	<windef.h>
+	<winbase.h>
+	<wincon.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<termios.h>
+	<unistd.h>
+
+1490634944 /home/nosedoin/Bureau/P8_Fighter/Version txt/src/Point.cpp
+	"Point.h"
+	<cassert>
+	<iostream>
+
+1490682078 source:/media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Combat.cpp
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490682920 source:/media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Environnement.cpp
+	"Environnement.h"
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490682080 /media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Environnement.h
+	<string.h>
+	"Zone.h"
+
+1490682078 /media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Zone.h
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490682078 /media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Rectangle.h
+	"Point.h"
+
+1490682080 /media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Point.h
+	<iostream>
+
+1490682897 source:/media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Point.cpp
+	"Point.h"
+	<cassert>
+	<iostream>
+
+1490682897 source:/media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490682080 source:/media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/winTxt.cpp
+	"winTxt.h"
+	<cassert>
+	<stdlib.h>
+	<stdarg.h>
+	<iostream>
+	<stdio.h>
+	<windef.h>
+	<winbase.h>
+	<wincon.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<termios.h>
+	<unistd.h>
+
+1490682078 /media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/winTxt.h
+
+1490682897 source:/media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/Zone.cpp
+	"Zone.h"
+	<iostream>
+
+1490682962 source:/media/p1507001/C8BC-063E/P8_Fighter/Version txt/src/main.cpp
+	<iostream>
+	<cassert>
+	"Rectangle.h"
+	"Environnement.h"
+	"Zone.h"
+	"winTxt.h"
+	"unistd.h"
+	<stdlib.h>
+	"Point.h"
+
+1490682078 source:/home/etu/l/p1507001/LIFAP4/Version txt/src/Combat.cpp
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490689158 source:/home/etu/l/p1507001/LIFAP4/Version txt/src/Environnement.cpp
+	"Environnement.h"
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490682080 /home/etu/l/p1507001/LIFAP4/Version txt/src/Environnement.h
+	<string.h>
+	"Zone.h"
+
+1490684191 /home/etu/l/p1507001/LIFAP4/Version txt/src/Zone.h
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490682078 /home/etu/l/p1507001/LIFAP4/Version txt/src/Rectangle.h
+	"Point.h"
+
+1490682080 /home/etu/l/p1507001/LIFAP4/Version txt/src/Point.h
+	<iostream>
+
+1490691869 source:/home/etu/l/p1507001/LIFAP4/Version txt/src/main.cpp
+	<iostream>
+	<cassert>
+	"Rectangle.h"
+	"Environnement.h"
+	"Zone.h"
+	"winTxt.h"
+	"unistd.h"
+	<stdlib.h>
+	"Point.h"
+
+1490682078 /home/etu/l/p1507001/LIFAP4/Version txt/src/winTxt.h
+
+1490682897 source:/home/etu/l/p1507001/LIFAP4/Version txt/src/Point.cpp
+	"Point.h"
+	<cassert>
+	<iostream>
+
+1490684733 source:/home/etu/l/p1507001/LIFAP4/Version txt/src/Rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490682080 source:/home/etu/l/p1507001/LIFAP4/Version txt/src/winTxt.cpp
+	"winTxt.h"
+	<cassert>
+	<stdlib.h>
+	<stdarg.h>
+	<iostream>
+	<stdio.h>
+	<windef.h>
+	<winbase.h>
+	<wincon.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<termios.h>
+	<unistd.h>
+
+1490689506 source:/home/etu/l/p1507001/LIFAP4/Version txt/src/Zone.cpp
+	"Zone.h"
+	<iostream>
+
+1490682078 source:/home/etu/l/p1507001/LIFAP4/Version Graphique/src/Combat.cpp
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490689158 source:/home/etu/l/p1507001/LIFAP4/Version Graphique/src/Environnement.cpp
+	"Environnement.h"
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490682080 /home/etu/l/p1507001/LIFAP4/Version Graphique/src/Environnement.h
+	<string.h>
+	"Zone.h"
+
+1490684191 /home/etu/l/p1507001/LIFAP4/Version Graphique/src/Zone.h
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490682078 /home/etu/l/p1507001/LIFAP4/Version Graphique/src/Rectangle.h
+	"Point.h"
+
+1490682080 /home/etu/l/p1507001/LIFAP4/Version Graphique/src/Point.h
+	<iostream>
+
+1490879109 source:/home/etu/l/p1507001/LIFAP4/Version Graphique/src/main.cpp
+	<iostream>
+	<cassert>
+	"Environnement.h"
+	"Zone.h"
+	"Point.h"
+	<stdlib.h>
+	<stdio.h>
+	<SDL/SDL.h>
+
+1490682078 /home/etu/l/p1507001/LIFAP4/Version Graphique/src/winTxt.h
+
+1490682897 source:/home/etu/l/p1507001/LIFAP4/Version Graphique/src/Point.cpp
+	"Point.h"
+	<cassert>
+	<iostream>
+
+1490684733 source:/home/etu/l/p1507001/LIFAP4/Version Graphique/src/Rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490682080 source:/home/etu/l/p1507001/LIFAP4/Version Graphique/src/winTxt.cpp
+	"winTxt.h"
+	<cassert>
+	<stdlib.h>
+	<stdarg.h>
+	<iostream>
+	<stdio.h>
+	<windef.h>
+	<winbase.h>
+	<wincon.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<termios.h>
+	<unistd.h>
+
+1490689506 source:/home/etu/l/p1507001/LIFAP4/Version Graphique/src/Zone.cpp
+	"Zone.h"
+	<iostream>
+
