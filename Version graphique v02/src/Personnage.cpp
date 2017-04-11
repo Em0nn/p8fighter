@@ -47,24 +47,27 @@ void Personnage::setposition(SDL_Point p)
 //fonctions de direction
 void Personnage::vaGauche(const Zone& z)
 {
-    if ((position.x - 1)>= 0)
+    position = {position.x-4,position.y};
+    /*if ((position.x - 1)>= 0)
     {
         SDL_Point p = {position.x-1,position.y};
         if (!z.inclusionPoint(&p))
         {
             position=p;
         }
-    }
+    }*/
 
 }
 
 void Personnage::vaDroite(const Zone& z)
 {
-    SDL_Point p = {position.x+1,position.y};
+
+    position = {position.x+4,position.y};
+    /*SDL_Point p = {position.x+1,position.y};
     if (!z.inclusionPoint(&p))
     {
         position=p;
-    }
+    }*/
 }
 
 void Personnage::saute(const Zone& z)

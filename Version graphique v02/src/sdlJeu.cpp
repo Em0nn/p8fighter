@@ -133,7 +133,7 @@ void sdlJeu::sdlBoucle ()
 {
 
     SDL_Point J = {100,350};
-    SDL_Point T = {850,350};
+    SDL_Point T = {800,350};
     SDL_Rect r1 = {0,0,50,450};
     SDL_Rect r2 = {50,400,900,50};
     SDL_Rect r3 = {950,0,50,450};
@@ -158,19 +158,19 @@ void sdlJeu::sdlBoucle ()
 			{              // Si une touche est enfoncee
 				switch (events.key.keysym.scancode)
 				{
-                    case SDL_SCANCODE_Q:
+                    case SDL_SCANCODE_S:
                         Justine.vaGauche(decor);
                         break;
 
-                    case SDL_SCANCODE_D:
+                    case SDL_SCANCODE_F:
                         Justine.vaDroite(decor);
                         break;
 
-                    case SDL_SCANCODE_4:
+                    case SDL_SCANCODE_J:
                         Tancrede.vaGauche(decor);
                         break;
 
-                    case SDL_SCANCODE_6:
+                    case SDL_SCANCODE_L:
                         Tancrede.vaDroite(decor);
                         break;
 
@@ -182,14 +182,12 @@ void sdlJeu::sdlBoucle ()
                     default: break;
 				}
 			}
-			// on affiche le jeu sur le buffer caché
+
+		}
+		// on affiche le jeu sur le buffer caché
 		sdlAff(Justine, Tancrede);
 
 		// on permute les deux buffers (cette fonction ne doit se faire qu'une seule fois dans la boucle)
         SDL_RenderPresent(renderer);
-		}
-
-
-        SDL_Delay(3000);
 	}
 }
