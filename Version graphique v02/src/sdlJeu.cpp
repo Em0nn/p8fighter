@@ -118,9 +118,7 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
     SDL_SetRenderDrawColor(renderer, 230, 240, 255, 255);
     SDL_RenderClear(renderer);
 
-    im_classe.loadFromFile("data/classe.jpg",renderer);
-    im_justine.loadFromFile(J.getnomImage(),renderer);
-    im_tancrede.loadFromFile(T.getnomImage(),renderer);
+
 
 	// Afficher le sprite de la classe
 	im_classe.draw(renderer,0,0,1000,500);
@@ -146,6 +144,10 @@ void sdlJeu::sdlBoucle ()
 
    bool quit = false;
    SDL_Event events;
+
+    im_classe.loadFromFile("data/classe.jpg",renderer);
+    im_justine.loadFromFile(Justine.getnomImage(),renderer);
+    im_tancrede.loadFromFile(Tancrede.getnomImage(),renderer);
 
 	// tant que ce n'est pas la fin ...
 	while (!quit) {
