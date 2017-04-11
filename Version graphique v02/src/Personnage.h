@@ -7,8 +7,10 @@
 #include "Statistique.h"
 #include "Etat.h"
 #include "Action.h"*/
-#include "sdlJeu.h"
 #include "Zone.h"
+#include <SDL.h>
+#include <SDL_ttf.h>
+#include <SDL_image.h>
 
 class Personnage
 {
@@ -31,7 +33,7 @@ class Personnage
         Personnage(const char* i, /*Animation an, Competence u, Statistique s, Etat e, Action * ac, bool o, bool b, */SDL_Point p);
 
         //fonctions get
-        const char* getnomImage();
+        const char* getnomImage() const;
 /*        Animation getaspect();
         Competence getulti();
         Statistique getstats();
@@ -39,7 +41,7 @@ class Personnage
         Action * gettab();
         bool getorientation();
         bool getbouclier();*/
-        SDL_Point getposition();
+        SDL_Point getposition() const;
 
         //fonctions set
         void setnomImage(const char* i);
@@ -52,9 +54,9 @@ class Personnage
         void setbouclier(bool b);*/
         void setposition(SDL_Point p);
 
-        SDL_Point vaGauche(Zone z);
-        SDL_Point vaDroite(Zone z);
-        SDL_Point saute(Zone z);
+        void vaGauche(const Zone& z);
+        void vaDroite(const Zone& z);
+        void saute(const Zone& z);
 
         ~Personnage();
 

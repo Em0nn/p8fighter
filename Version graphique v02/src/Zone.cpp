@@ -46,7 +46,7 @@ void Zone::setnb_rectangle(int n)
     nb_rectangle=n;
 }
 
-bool Zone::inclusionPoint(const SDL_Point * p)
+bool Zone::inclusionPoint(const SDL_Point * p) const
 {
     for(unsigned int i=0; i<nb_rectangle; i++)
     {

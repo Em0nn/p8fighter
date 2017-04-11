@@ -30,7 +30,7 @@ class Zone
         void settab(int pos, SDL_Rect r);
         void setnb_rectangle(int n);
 
-        bool inclusionPoint(const SDL_Point * p);
+        bool inclusionPoint(const SDL_Point * p) const;
 
         void testRegression();
 

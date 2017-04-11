@@ -182,13 +182,14 @@ void sdlJeu::sdlBoucle ()
                     default: break;
 				}
 			}
-		}
-
-		// on affiche le jeu sur le buffer caché
+			// on affiche le jeu sur le buffer caché
 		sdlAff(Justine, Tancrede);
 
 		// on permute les deux buffers (cette fonction ne doit se faire qu'une seule fois dans la boucle)
         SDL_RenderPresent(renderer);
+		}
+
+
         SDL_Delay(3000);
 	}
 }

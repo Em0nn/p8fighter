@@ -11,7 +11,7 @@ using namespace std;
 Personnage::Personnage ()
 {
     nomImage="NULL";
-    position = {0,0};
+    position.x = position.y = 0.0;
 }
 
 //constructeur par copie
@@ -45,12 +45,12 @@ void Personnage::setposition(SDL_Point p)
 
 
 //fonctions de direction
-void Personnage::vaGauche(Zone z)
+void Personnage::vaGauche(const Zone& z)
 {
     if ((position.x - 1)>= 0)
     {
         SDL_Point p = {position.x-1,position.y};
-        if (!z.inclusionPoint(p))
+        if (!z.inclusionPoint(&p))
         {
             position=p;
         }
@@ -58,16 +58,20 @@ void Personnage::vaGauche(Zone z)
 
 }
 
-void Personnage::vaDroite(Zone z)
+void Personnage::vaDroite(const Zone& z)
 {
-    SDL_Point p = (position.x+1,position.y);
-    if (!z.inclusionPoint(p))
+    SDL_Point p = {position.x+1,position.y};
+    if (!z.inclusionPoint(&p))
     {
         position=p;
     }
 }
 
-void Personnage::saute(Zone z)
+void Personnage::saute(const Zone& z)
 {
+
+}
+
+Personnage::~Personnage() {
 
 }

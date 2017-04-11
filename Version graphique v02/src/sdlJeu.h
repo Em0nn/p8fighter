@@ -4,7 +4,7 @@
 #include <SDL.h>
 #include <SDL_ttf.h>
 #include <SDL_image.h>
-#include <Personnage.h>
+#include "Personnage.h"
 
 
 //! \brief Pour gérer une image avec SDL2
