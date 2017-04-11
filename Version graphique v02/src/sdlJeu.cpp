@@ -149,6 +149,8 @@ void sdlJeu::sdlBoucle ()
     im_justine.loadFromFile(Justine.getnomImage(),renderer);
     im_tancrede.loadFromFile(Tancrede.getnomImage(),renderer);
 
+    const Uint8 *state = SDL_GetKeyboardState(NULL);
+
 	// tant que ce n'est pas la fin ...
 	while (!quit) {
 
@@ -157,35 +159,36 @@ void sdlJeu::sdlBoucle ()
 		{
 			if (events.type == SDL_QUIT) quit = true;           // Si l'utilisateur a clique sur la croix de fermeture
 			else if (events.type == SDL_KEYDOWN)
-			{              // Si une touche est enfoncee
-				switch (events.key.keysym.scancode)
+			{              // Si une touche est enfoncee ou si une touche n'est pas enfoncee (aka tout le temps)
+
+				if(state[SDL_SCANCODE_S])
 				{
-                    case SDL_SCANCODE_S:
                         Justine.vaGauche(decor);
-                        break;
-
-                    case SDL_SCANCODE_F:
-                        Justine.vaDroite(decor);
-                        break;
-
-                    case SDL_SCANCODE_J:
-                        Tancrede.vaGauche(decor);
-                        break;
-
-                    case SDL_SCANCODE_L:
-                        Tancrede.vaDroite(decor);
-                        break;
-
-                    case SDL_SCANCODE_ESCAPE:
-                    case SDL_SCANCODE_G:
-                        quit = true;
-                        break;
-
-                    default: break;
 				}
-			}
 
-		}
+				if(state[SDL_SCANCODE_F])
+				{
+                        Justine.vaDroite(decor);
+				}
+
+				if(state[SDL_SCANCODE_J])
+				{
+                        Tancrede.vaGauche(decor);
+
+				}
+
+				if(state[SDL_SCANCODE_L])
+				{
+                        Tancrede.vaDroite(decor);
+				}
+
+				if(state[SDL_SCANCODE_ESCAPE] || state[SDL_SCANCODE_G])
+				{
+                        quit = true;
+				}
+            }
+        }
+
 		// on affiche le jeu sur le buffer caché
 		sdlAff(Justine, Tancrede);
 
