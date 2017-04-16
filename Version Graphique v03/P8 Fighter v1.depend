@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1490178265 source:/home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/Combat.cpp
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490198128 source:/home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/Environnement.cpp
+	"Environnement.h"
+	<cassert>
+	<iostream>
+	<string.h>
+	<fstream>
+
+1490178265 /home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/Environnement.h
+	<string.h>
+	"Zone.h"
+
+1490191958 /home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/Zone.h
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490199292 /home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/Rectangle.h
+
+1490273220 source:/home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/main.cpp
+	<iostream>
+	<cassert>
+	"Rectangle.h"
+	"Zone.h"
+
+1490273147 source:/home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/Rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+	<cassert>
+
+1490271881 source:/home/nosedoin/Bureau/P8_Fighter/p1507001-p8-fighter/src/Zone.cpp
+	"Zone.h"
+	<iostream>
+
