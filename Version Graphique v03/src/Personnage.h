@@ -30,7 +30,7 @@ class Personnage
 
         Personnage();
 
-        Personnage(const char* i, /*Animation an, Competence u, Statistique s, Etat e, Action * ac, bool b, */SDL_Point p, bool o);
+        Personnage(const char* i, /*Animation an, Competence u, Statistique s, Etat e, Action * ac, */SDL_Point p, bool o);
 
         //fonctions get
         const char* getnomImage() const;
@@ -59,6 +59,9 @@ class Personnage
         unsigned int saute();
         void accroupir();
         void descendre();
+        void lever();
+        unsigned int attaquer(int i);
+        void FinAtt();
 
         ~Personnage();
 

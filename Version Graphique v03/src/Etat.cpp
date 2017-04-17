@@ -7,6 +7,7 @@ Etat::Etat()
     accroupi = false;
     couche = false;
     saut = false;
+    attaque = 0;
 }
 
 Etat::Etat (bool a, bool c, bool s)
@@ -36,6 +37,11 @@ bool Etat::getSaut()
     return saut;
 }
 
+int Etat::getAttaque()
+{
+    return attaque;
+}
+
 void Etat::setAccroupi(bool a)
 {
     accroupi = a;
@@ -49,6 +55,11 @@ void Etat::setCouche (bool c)
 void Etat::setSaut(bool s)
 {
     saut = s;
+}
+
+void Etat::setAttaque(int a)
+{
+    attaque = a;
 }
 
 void Etat::accroupir ()
@@ -73,7 +84,10 @@ void Etat::sauter ()
 
 void Etat::lever ()
 {
-    couche = false;
     accroupi = false;
-    saut = false;
+}
+
+void Etat::attaquer(int i)
+{
+    attaque = i;
 }

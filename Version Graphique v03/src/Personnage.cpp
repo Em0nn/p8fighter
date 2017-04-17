@@ -67,13 +67,13 @@ void Personnage::setorientation(bool o)
 //fonctions de direction
 void Personnage::vaGauche(const Zone& z)
 {
-    if ((position.x - 1)>= 0)
+    if ((position.x - 30)>= 0)
     {
         SDL_Point p = {position.x-30,position.y};
-        //if (!z.inclusionPoint(&p))
-        //{
+        if (!z.inclusionPoint(&p))
+        {
             position=p;
-        //}
+        }
     }
     orientation = false;
 
@@ -105,6 +105,22 @@ void Personnage::descendre()
 void Personnage::accroupir()
 {
     etat.accroupir();
+}
+
+void Personnage::lever()
+{
+    etat.lever();
+}
+
+unsigned int Personnage::attaquer(int i)
+{
+    etat.attaquer(i);
+    return SDL_GetTicks();
+}
+
+void Personnage::FinAtt()
+{
+    etat.setAttaque(0);
 }
 
 Personnage::~Personnage()
