@@ -143,7 +143,7 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
 	}
 	else if ( !J.getetat().getSaut() && J.getorientation() && J.getetat().getAccroupi() && J.getetat().getAttaque() == 1)
 	{
-        im_justineAcc1D.draw(renderer,J.getposition().x - 50,J.getposition().y,450,400);
+        im_justineAcc1D.draw(renderer,J.getposition().x,J.getposition().y,450,400);
 	}
 	else if ( !J.getetat().getSaut() && J.getorientation() && J.getetat().getAccroupi() && J.getetat().getAttaque() == 2)
 	{
@@ -171,7 +171,7 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
 	}
 	else if ( !J.getetat().getSaut() && !J.getorientation() && J.getetat().getAccroupi() && J.getetat().getAttaque() == 2)
 	{
-        im_justineAcc2G.draw(renderer,J.getposition().x - 50,J.getposition().y,450,400);
+        im_justineAcc2G.draw(renderer,J.getposition().x,J.getposition().y,400,400);
 	}
 	else if ( J.getetat().getSaut() && J.getorientation())
 	{
@@ -185,7 +185,7 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
 
 
 	//Affiche Tancrede
-    if ( !T.getetat().getSaut() && T.getorientation() && T.getetat().getAccroupi())
+    if ( !T.getetat().getSaut() && T.getorientation() && T.getetat().getAccroupi() && T.getetat().getAttaque() == 0)
 	{
         im_tancredeAccroupiD.draw(renderer,T.getposition().x,T.getposition().y,400,400);
 	}
@@ -199,9 +199,17 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
 	}
 	else if ( !T.getetat().getSaut() && T.getorientation() && !T.getetat().getAccroupi() && T.getetat().getAttaque() == 2)
 	{
-        im_tancredeDeb2D.draw(renderer,T.getposition().x - 50,T.getposition().y,400,400);
+        im_tancredeDeb2D.draw(renderer,T.getposition().x,T.getposition().y,400,400);
 	}
-	else if ( !T.getetat().getSaut() && !T.getorientation() && T.getetat().getAccroupi())
+	else if ( !T.getetat().getSaut() && T.getorientation() && T.getetat().getAccroupi() && T.getetat().getAttaque() == 1)
+	{
+        im_tancredeAcc1D.draw(renderer,T.getposition().x,T.getposition().y,450,400);
+	}
+	else if ( !T.getetat().getSaut() && T.getorientation() && T.getetat().getAccroupi() && T.getetat().getAttaque() == 2)
+	{
+        im_tancredeAcc2D.draw(renderer,T.getposition().x,T.getposition().y,400,400);
+	}
+	else if ( !T.getetat().getSaut() && !T.getorientation() && T.getetat().getAccroupi() && T.getetat().getAttaque() == 0)
 	{
         im_tancredeAccroupiG.draw(renderer,T.getposition().x,T.getposition().y,400,400);
 	}
@@ -215,7 +223,15 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
 	}
 	else if ( !T.getetat().getSaut() && !T.getorientation() && !T.getetat().getAccroupi() && T.getetat().getAttaque() == 2)
 	{
-        im_tancredeDeb2G.draw(renderer,T.getposition().x + 50,T.getposition().y,400,400);
+        im_tancredeDeb2G.draw(renderer,T.getposition().x,T.getposition().y,400,400);
+	}
+	else if ( !T.getetat().getSaut() && !T.getorientation() && T.getetat().getAccroupi() && T.getetat().getAttaque() == 1)
+	{
+        im_tancredeAcc1G.draw(renderer,T.getposition().x - 50,T.getposition().y,450,400);
+	}
+	else if ( !T.getetat().getSaut() && !T.getorientation() && T.getetat().getAccroupi() && T.getetat().getAttaque() == 2)
+	{
+        im_tancredeAcc2G.draw(renderer,T.getposition().x,T.getposition().y,400,400);
 	}
 	else if ( T.getetat().getSaut() && T.getorientation())
 	{
@@ -225,6 +241,7 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
 	{
         im_tancredeSautG.draw(renderer,T.getposition().x,T.getposition().y,400,400);
 	}
+
 
 
     //Affiche le second sprite de la classe
@@ -357,59 +374,54 @@ void sdlJeu::sdlBoucle ()
 
 				//Touches Justine
 
-				if(state[SDL_SCANCODE_A])
+				if(state[SDL_SCANCODE_A] && Justine.getetat().getAttaque() == 0)
 				{
                         Justine.vaGauche(decor);
 				}
 
-				if(state[SDL_SCANCODE_D])
+				if(state[SDL_SCANCODE_D] && Justine.getetat().getAttaque() == 0)
 				{
                         Justine.vaDroite(decor);
 				}
 
-                if (state[SDL_SCANCODE_W] && !Justine.getetat().getSaut())
+                if (state[SDL_SCANCODE_W] && !Justine.getetat().getSaut() && Justine.getetat().getAttaque() == 0)
                 {
                     Jsaut = Justine.saute();
                 }
 
-                if (state[SDL_SCANCODE_T] && !Justine.getetat().getAttaque() && !Justine.getetat().getSaut())
+                if (state[SDL_SCANCODE_T] && Justine.getetat().getAttaque() == 0 && !Justine.getetat().getSaut())
                 {
                     Jatt = Justine.attaquer(1);
                 }
 
-                if (state[SDL_SCANCODE_Y] && !Justine.getetat().getAttaque() && !Justine.getetat().getSaut())
+                if (state[SDL_SCANCODE_Y] && Justine.getetat().getAttaque() == 0 && !Justine.getetat().getSaut())
                 {
                     Jatt = Justine.attaquer(2);
                 }
 
                 //Touches Tancrède
-				if(state[SDL_SCANCODE_LEFT])
+				if(state[SDL_SCANCODE_LEFT] && Tancrede.getetat().getAttaque() == 0)
 				{
                         Tancrede.vaGauche(decor);
 
 				}
 
-				if(state[SDL_SCANCODE_RIGHT])
+				if(state[SDL_SCANCODE_RIGHT] && Tancrede.getetat().getAttaque() == 0)
 				{
                         Tancrede.vaDroite(decor);
 				}
 
-                if(state[SDL_SCANCODE_DOWN])
-				{
-                        Tancrede.accroupir();
-				}
-
-				if (state[SDL_SCANCODE_UP] && !Tancrede.getetat().getSaut() && !Tancrede.getetat().getAttaque())
+				if (state[SDL_SCANCODE_UP] && !Tancrede.getetat().getSaut() && Tancrede.getetat().getAttaque() == 0)
                 {
                     Tsaut = Tancrede.saute();
                 }
 
-                if (state[SDL_SCANCODE_KP_4] && !Tancrede.getetat().getAttaque() && !Tancrede.getetat().getSaut())
+                if (state[SDL_SCANCODE_KP_4] && Tancrede.getetat().getAttaque() == 0 && !Tancrede.getetat().getSaut())
                 {
                     Tatt = Tancrede.attaquer(1);
                 }
 
-                if (state[SDL_SCANCODE_KP_5] && !Tancrede.getetat().getAttaque() && !Tancrede.getetat().getSaut())
+                if (state[SDL_SCANCODE_KP_5] && Tancrede.getetat().getAttaque() == 0 && !Tancrede.getetat().getSaut())
                 {
                     Tatt = Tancrede.attaquer(2);
                 }
@@ -434,12 +446,12 @@ void sdlJeu::sdlBoucle ()
             Tancrede.descendre();
         }
 
-        if (Tatt < SDL_GetTicks() - 250 && Tancrede.getetat().getAttaque())
+        if (Tatt < SDL_GetTicks() - (300*Tancrede.getetat().getAttaque()) && Tancrede.getetat().getAttaque())
         {
             Tancrede.FinAtt();
         }
 
-        if (Jatt < SDL_GetTicks() - 250 && Justine.getetat().getAttaque())
+        if (Jatt < SDL_GetTicks() - (300*Justine.getetat().getAttaque()) && Justine.getetat().getAttaque())
         {
             Justine.FinAtt();
         }
@@ -448,18 +460,22 @@ void sdlJeu::sdlBoucle ()
         sdlAff(Justine, Tancrede);
 
         const Uint8* pKeyStates = SDL_GetKeyboardState(NULL);
-        if ( !pKeyStates[SDL_SCANCODE_S] )
+        if ( !pKeyStates[SDL_SCANCODE_S] && Justine.getetat().getAttaque() == 0)
         {
             Justine.lever();
         }
-        else
+        else if (Justine.getetat().getAttaque() == 0)
         {
             Justine.accroupir();
         }
 
-        if ( !pKeyStates[SDL_SCANCODE_DOWN] )
+        if ( !pKeyStates[SDL_SCANCODE_DOWN] && Tancrede.getetat().getAttaque() == 0)
         {
             Tancrede.lever();
+        }
+        else if (Tancrede.getetat().getAttaque() == 0)
+        {
+            Tancrede.accroupir();
         }
 
 

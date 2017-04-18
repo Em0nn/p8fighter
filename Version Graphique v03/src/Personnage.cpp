@@ -69,7 +69,7 @@ void Personnage::vaGauche(const Zone& z)
 {
     if ((position.x - 30)>= 0)
     {
-        SDL_Point p = {position.x-30,position.y};
+        SDL_Point p = {position.x-50,position.y};
         if (!z.inclusionPoint(&p))
         {
             position=p;
@@ -81,7 +81,7 @@ void Personnage::vaGauche(const Zone& z)
 
 void Personnage::vaDroite(const Zone& z)
 {
-    SDL_Point p = {position.x+30,position.y};
+    SDL_Point p = {position.x+50,position.y};
     if (!z.inclusionPoint(&p))
     {
         position=p;
