@@ -1,5 +1,5 @@
 
-OBJ_FILES = Zone.cpp  sdlJeu.cpp Personnage.cpp Etat.cpp
+OBJ_FILES = Zone.cpp  sdlJeu.cpp Personnage.cpp Etat.cpp Action.cpp
 
 
 SRCS_SDL = $(OBJ_FILES) main.cpp

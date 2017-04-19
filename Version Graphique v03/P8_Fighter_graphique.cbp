@@ -36,6 +36,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="extern/libmingw32.a" />
+		<Unit filename="src/Action.cpp" />
 		<Unit filename="src/Action.h" />
 		<Unit filename="src/Animation.h" />
 		<Unit filename="src/Combat.cpp" />

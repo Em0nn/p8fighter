@@ -248,8 +248,8 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
     im_classe2.draw(renderer,0,0,2000,1000);
 
     //affiche les barres de vie
-    im_VieJu40.draw(renderer,475,25,500,50);
-    im_VieTancou70.draw(renderer,1075,25,500,50);
+    im_VieJu100.draw(renderer,475,25,500,50);
+    im_VieTancou100.draw(renderer,1075,25,500,50);
 }
 
 void sdlJeu::sdlBoucle ()

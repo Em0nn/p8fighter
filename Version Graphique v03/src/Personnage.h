@@ -6,7 +6,7 @@
 #include "Competence.h"
 #include "Statistique.h"*/
 #include "Etat.h"
-//#include "Action.h"
+#include "Action.h"
 #include "Zone.h"
 #include <SDL.h>
 #include <SDL_ttf.h>
@@ -21,7 +21,14 @@ class Personnage
 //        Competence ulti;
 //        Statistique stats;
         Etat etat;
-//        Action * tab;
+        /*Action Deb1D; //1 <- code attaque
+        Action Deb1G; //2
+        Action Deb2D; //3
+        Action Deb2G; //4
+        Action Acc1D; //5
+        Action Acc1G; //6
+        Action Acc2D; //7
+        Action Acc2G; //8*/
         bool orientation;
 //        bool bouclier;
         SDL_Point position;
@@ -37,19 +44,34 @@ class Personnage
 /*        Animation getaspect();
         Competence getulti();
         Statistique getstats();
-        */Etat getetat() const;
-        //Action * gettab();
+      */Etat getetat() const;
+        Action getDeb1D();
+        Action getDeb1G();
+        Action getDeb2D();
+        Action getDeb2G();
+        Action getAcc1D();
+        Action getAcc1G();
+        Action getAcc2D();
+        Action getAcc2G();
         bool getorientation() const;
         //bool getbouclier();
         SDL_Point getposition() const;
 
+
         //fonctions set
         void setnomImage(const char* i);
-/*        void setaspect(Animation an);
+        void setaspect(Animation an);
         void setulti(Competence u);
-        void setstats(Statistique s);*/
+        void setstats(Statistique s);
         void setetat(Etat e);
-        //void settab(Action * ac);
+        void setDeb1D(Action a);
+        void setDeb1G(Action a);
+        void setDeb2D(Action a);
+        void setDeb2G(Action a);
+        void setAcc1D(Action a);
+        void setAcc1G(Action a);
+        void setAcc2D(Action a);
+        void setAcc2G(Action a);
         void setorientation(bool o);
         //void setbouclier(bool b);
         void setposition(SDL_Point p);

@@ -22,7 +22,7 @@ class Action
 
         Action();
 
-        Action(/*int dep,*/ int tps, int dur, /*int val*/, Zone z/*, Animation a, Etat e, std::string s*/);
+        Action(/*int dep,*/ int tps, int dur, /*int val,*/ Zone z/*, Animation a, Etat e, std::string s*/);
 
         //get
         //int getdeplacement();
@@ -32,7 +32,7 @@ class Action
         Zone getzone_action();
         //Animation getanim();
         //Etat getetat();
-        std::string getson();
+        //std::string getson();
 
 
         //set
