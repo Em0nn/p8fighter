@@ -5,16 +5,17 @@ using namespace std;
 Action::Action()
 {
     temps_app = 0;
-    duree = 1;
-    zone_action = Zone();
+    duree = 0;
+    Hit = {0,0,0,0};
+
 }
 
 
-Action::Action(int tps, int dur, Zone z)
+Action::Action(int tps, int dur, SDL_Rect r)
 {
     temps_app = tps;
     duree = dur;
-    zone_action = z;
+    Hit = r;
 }
 
 int Action::gettemps_app()
@@ -27,9 +28,9 @@ int Action::getduree()
     return duree;
 }
 
-Zone Action::getzone_action()
+SDL_Rect Action::getHit()
 {
-    return zone_action;
+    return Hit;
 }
 
 void Action::settemps_app(int tps)

@@ -1,8 +1,12 @@
 #ifndef ACTION_H
 #define ACTION_H
+
 #include "Zone.h"
-#include "Animation.h"
-#include "Etat.h"
+#include <SDL.h>
+#include <SDL_ttf.h>
+#include <SDL_image.h>
+//#include "Animation.h"
+//#include "Etat.h"
 #include <cassert>
 
 class Action
@@ -13,7 +17,7 @@ class Action
         int temps_app;
         int duree;
         //int valeur;
-        Zone zone_action;
+        SDL_Rect Hit;
         //Animation anim;
         //Etat etat;
         //std::string son;
@@ -22,14 +26,14 @@ class Action
 
         Action();
 
-        Action(/*int dep,*/ int tps, int dur, /*int val,*/ Zone z/*, Animation a, Etat e, std::string s*/);
+        Action(/*int dep,*/ int tps, int dur/*, int val*/, SDL_Rect r/*, Animation a, Etat e, std::string s*/);
 
         //get
         //int getdeplacement();
         int gettemps_app();
         int getduree();
         //int getvaleur();
-        Zone getzone_action();
+        SDL_Rect getHit();
         //Animation getanim();
         //Etat getetat();
         //std::string getson();
@@ -40,7 +44,7 @@ class Action
         void settemps_app(int tps);
         void setduree(int dur);
         //void setvaleur(int val);
-        void setzone_action(Zone z);
+        void setzone_action(SDL_Rect);
         //void setanim(Animation a);
         //void setetat(Etat e);
         //void setson(std::string s);

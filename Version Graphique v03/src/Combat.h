@@ -8,21 +8,21 @@ class Combat
     private:
         Personnage J1;
         Personnage J2;
-        Evenement * event;
-        Icone J1_icone;
-        Icone J2_icone;
-        Jauge vieJ1;
-        Jauge vieJ2;
-        Jauge ultiJ1;
-        Jauge ultiJ2;
-        Rectangle posJ1Init;
-        Rectangle posJ2Init;
-        Animation compte_a_rebours;
-        Animation entreeJ1;
-        Animation entreeJ2;
-        int temps_av_cb;
-        Environnement decor;
-        Rectangle fenetre;
+        //Evenement * event;
+        //Icone J1_icone;
+        //Icone J2_icone;
+        //Jauge vieJ1;
+        //Jauge vieJ2;
+        //Jauge ultiJ1;
+        //Jauge ultiJ2;
+        SDL_Point posJ1Init;
+        SDL_Point posJ2Init;
+        //Animation compte_a_rebours;
+        //Animation entreeJ1;
+        //Animation entreeJ2;
+        //int temps_av_cb;
+        //Environnement decor;
+        //Rectangle fenetre;
 
     public:
 

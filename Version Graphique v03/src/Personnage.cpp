@@ -21,6 +21,15 @@ Personnage::Personnage (const char* i, SDL_Point pos, bool o)
     nomImage = i;
     orientation=o;
     position=pos;
+    Action Deb1D(); //1 <- code attaque
+    Action Deb1G(); //2
+    Action Deb2D(); //3
+    Action Deb2G(); //4
+    Action Acc1D(); //5
+    Action Acc1G(); //6
+    Action Acc2D(); //7
+    Action Acc2G(); //8
+
 }
 
 

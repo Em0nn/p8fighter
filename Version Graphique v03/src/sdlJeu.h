@@ -42,6 +42,8 @@ private :
     Image im_classe;
     Image im_classe2;
 
+    Image im_hitbox;
+
     Image im_VieJu100;
     Image im_VieJu90;
     Image im_VieJu80;

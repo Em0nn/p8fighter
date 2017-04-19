@@ -4,12 +4,12 @@
 	<Project>
 		<Option title="P8 Fighter v1" />
 		<Option makefile_is_custom="1" />
-		<Option execution_dir="bin" />
+		<Option execution_dir="../Version Graphique v03" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/P8 Fighter v1" prefix_auto="1" extension_auto="1" />
+			<Target title="P8_Fighter_sdl">
+				<Option output="bin/P8_Fighter_sdl" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -17,19 +17,6 @@
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/P8 Fighter v1" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-					<Add directory="include" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
 			</Target>
 		</Build>
 		<Compiler>

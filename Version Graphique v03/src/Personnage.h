@@ -21,14 +21,14 @@ class Personnage
 //        Competence ulti;
 //        Statistique stats;
         Etat etat;
-        /*Action Deb1D; //1 <- code attaque
+        Action Deb1D; //1 <- code attaque
         Action Deb1G; //2
         Action Deb2D; //3
         Action Deb2G; //4
         Action Acc1D; //5
         Action Acc1G; //6
         Action Acc2D; //7
-        Action Acc2G; //8*/
+        Action Acc2G; //8
         bool orientation;
 //        bool bouclier;
         SDL_Point position;
@@ -60,9 +60,9 @@ class Personnage
 
         //fonctions set
         void setnomImage(const char* i);
-        void setaspect(Animation an);
-        void setulti(Competence u);
-        void setstats(Statistique s);
+        //void setaspect(Animation an);
+        //void setulti(Competence u);
+        //void setstats(Statistique s);
         void setetat(Etat e);
         void setDeb1D(Action a);
         void setDeb1G(Action a);
