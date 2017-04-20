@@ -122,6 +122,8 @@ public :
     ~sdlJeu ();
     void sdlBoucle ();
     void sdlAff (Personnage J, Personnage T);
+    void ReinitHitBox(Personnage & J, Personnage & T);
+    bool touche(const SDL_Rect *a, const SDL_Rect *b);
 
 };
 

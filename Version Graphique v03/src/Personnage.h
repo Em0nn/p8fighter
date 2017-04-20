@@ -30,8 +30,11 @@ class Personnage
         Action Acc2D; //7
         Action Acc2G; //8
         bool orientation;
+        int vie;
 //        bool bouclier;
         SDL_Point position;
+        SDL_Rect HitBoxPerso;
+        SDL_Rect HitBoxAtt;
 
     public:
 
@@ -56,6 +59,9 @@ class Personnage
         bool getorientation() const;
         //bool getbouclier();
         SDL_Point getposition() const;
+        SDL_Rect getHitBoxPerso() const;
+        SDL_Rect getHitBoxAtt() const;
+        int getvie();
 
 
         //fonctions set
@@ -75,6 +81,9 @@ class Personnage
         void setorientation(bool o);
         //void setbouclier(bool b);
         void setposition(SDL_Point p);
+        void setHitBoxPerso(int a, int b, int c, int d);
+        void setHitBoxAtt(int a, int b, int c, int d);
+        void setvie(int i);
 
         void vaGauche(const Zone& z);
         void vaDroite(const Zone& z);
@@ -84,6 +93,7 @@ class Personnage
         void lever();
         unsigned int attaquer(int i);
         void FinAtt();
+
 
         ~Personnage();
 

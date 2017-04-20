@@ -13,6 +13,7 @@ Personnage::Personnage ()
 {
     nomImage="NULL";
     position.x = position.y = 0.0;
+    vie = 10;
 }
 
 //constructeur par copie
@@ -29,6 +30,7 @@ Personnage::Personnage (const char* i, SDL_Point pos, bool o)
     Action Acc1G(); //6
     Action Acc2D(); //7
     Action Acc2G(); //8
+    vie = 10;
 
 }
 
@@ -84,7 +86,18 @@ Action Personnage::getAcc2G()
 {
     return Acc2G;
 }
-
+SDL_Rect Personnage::getHitBoxAtt() const
+{
+    return HitBoxAtt;
+}
+SDL_Rect Personnage::getHitBoxPerso() const
+{
+    return HitBoxPerso;
+}
+int Personnage::getvie()
+{
+    return vie;
+}
 
 
 
@@ -136,6 +149,24 @@ void Personnage::setAcc2D(Action a)
 void Personnage::setAcc2G(Action a)
 {
     Acc2G = a;
+}
+void Personnage::setHitBoxAtt(int a, int b, int c, int d)
+{
+    HitBoxAtt.x = a;
+    HitBoxAtt.y = b;
+    HitBoxAtt.w = c;
+    HitBoxAtt.h = d;
+}
+void Personnage::setHitBoxPerso(int a, int b, int c, int d)
+{
+    HitBoxPerso.x = a;
+    HitBoxPerso.y = b;
+    HitBoxPerso.w = c;
+    HitBoxPerso.h = d;
+}
+void Personnage::setvie(int i)
+{
+    vie = i;
 }
 
 
