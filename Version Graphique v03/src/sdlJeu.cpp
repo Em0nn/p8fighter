@@ -123,12 +123,12 @@ void sdlJeu::sdlAff (Personnage J, Personnage T) {
 
 	// Afficher le sprite de la classe
 	im_classe.draw(renderer,0,0,2000,1000);
-
-    /*const SDL_Rect A = J.getHitBoxAtt();
-    const SDL_Rect *ptrA = &A;
-    const SDL_Rect B = T.getHitBoxPerso();
-    const SDL_Rect *ptrB = &B;*/
-    /*if (touche(ptrA,ptrB))
+/*
+    const SDL_Rect G = J.getHitBoxAtt();
+    const SDL_Rect *ptrG = &G;
+    const SDL_Rect H = T.getHitBoxPerso();
+    const SDL_Rect *ptrH = &H;
+    if (touche(ptrH,ptrH))
     {
 
         J.setvie(J.getvie() - 1);
@@ -581,12 +581,20 @@ void sdlJeu::sdlBoucle ()
                     {
                         Tatt = Tancrede.attaquer(6);
                     }
-                    ReinitHitBox(Justine, Tancrede);
-                    const SDL_Rect C = Justine.getHitBoxPerso();
-                    const SDL_Rect *ptrC = &C;
-                    const SDL_Rect D = Tancrede.getHitBoxAtt();
-                    const SDL_Rect *ptrD = &D;
-                    if (touche(ptrC,ptrD)) Justine.setvie(Justine.getvie() - 1);
+
+                    if (Justine.getvie() <= 0)
+                    {
+                        Justine.setvie(10);
+                    }
+                    else
+                    {
+                        ReinitHitBox(Justine, Tancrede);
+                        const SDL_Rect C = Justine.getHitBoxPerso();
+                        const SDL_Rect *ptrC = &C;
+                        const SDL_Rect D = Tancrede.getHitBoxAtt();
+                        const SDL_Rect *ptrD = &D;
+                        if (touche(ptrC,ptrD)) Justine.setvie(Justine.getvie() - 1);
+                    }
 
                 }
 
@@ -608,17 +616,25 @@ void sdlJeu::sdlBoucle ()
                     {
                         Tatt = Tancrede.attaquer(8);
                     }
-                    ReinitHitBox(Justine, Tancrede);
-                    const SDL_Rect C = Justine.getHitBoxPerso();
-                    const SDL_Rect *ptrC = &C;
-                    const SDL_Rect D = Tancrede.getHitBoxAtt();
-                    const SDL_Rect *ptrD = &D;
-                    if (touche(ptrC,ptrD)) Justine.setvie(Justine.getvie() - 1);
+
+                    if (Justine.getvie() <= 0)
+                    {
+                        Justine.setvie(10);
+                    }
+                    else
+                    {
+                        ReinitHitBox(Justine, Tancrede);
+                        const SDL_Rect C = Justine.getHitBoxPerso();
+                        const SDL_Rect *ptrC = &C;
+                        const SDL_Rect D = Tancrede.getHitBoxAtt();
+                        const SDL_Rect *ptrD = &D;
+                        if (touche(ptrC,ptrD)) Justine.setvie(Justine.getvie() - 1);
+                    }
                 }
 
 
                 //Sortie du jeu
-                if(state[SDL_SCANCODE_ESCAPE] || state[SDL_SCANCODE_G])
+                if(state[SDL_SCANCODE_ESCAPE])
 				{
                         quit = true;
 				}
