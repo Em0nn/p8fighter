@@ -8,7 +8,7 @@ class Evenement
 {
     private:
 
-        Zone zoneAction;
+        SDL_Rect zoneAction;
         bool saisissable;
         int duree;
         Animation animation;
