@@ -924,7 +924,7 @@ void Combat::Adjuvants(int & tMama, int & tAttal, int & tDejou, int & tFelix, in
         }
         else if (tFelix > SDL_GetTicks() - 7500)
         {
-            im_Rayon.draw(renderer,event.getZoneAction().x - 75,200,150,700);
+            im_Rayon.draw(renderer,event.getZoneAction().x - 175,200,150,700);
             im_FelixAction.draw(renderer,event.getZoneAction().x - 200,0,300,300);
             eventDispo = false;
         }
