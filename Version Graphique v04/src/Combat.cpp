@@ -911,27 +911,10 @@ void Combat::Adjuvants(int & tMama, int & tAttal, int & tDejou, int & tFelix, in
         {
             im_FelixEntre1.draw(renderer,event.getZoneAction().x - 150,0,300,300);
         }
-        else if (tFelix > SDL_GetTicks() - 7000 && !eventDispo)
-        {
-            im_Rayon.draw(renderer,event.getZoneAction().x - 75,200,150,700);
-            im_FelixAction.draw(renderer,event.getZoneAction().x - 200,0,300,300);
-            eventDispo = true;
-        }
-        else if (tFelix > SDL_GetTicks() - 7250)
-        {
-            im_Rayon.draw(renderer,event.getZoneAction().x - 75,200,150,700);
-            im_FelixAction.draw(renderer,event.getZoneAction().x - 200,0,300,300);
-        }
-        else if (tFelix > SDL_GetTicks() - 7500)
-        {
-            im_Rayon.draw(renderer,event.getZoneAction().x - 175,200,150,700);
-            im_FelixAction.draw(renderer,event.getZoneAction().x - 200,0,300,300);
-            eventDispo = false;
-        }
         else if (tFelix > SDL_GetTicks() - 7000)
         {
             im_Rayon.draw(renderer,event.getZoneAction().x - 75,200,150,700);
-            im_FelixAction.draw(renderer,event.getZoneAction().x - 200,0,300,300);
+            im_FelixAction.draw(renderer,event.getZoneAction().x - 150,0,300,300);
             eventDispo = true;
         }
         else if (tFelix > SDL_GetTicks() - 10000)
