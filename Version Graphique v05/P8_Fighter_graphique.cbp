@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="P8 Fighter v1" />
+		<Option makefile_is_custom="1" />
+		<Option execution_dir="../Version Graphique v04" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="$make -f $makefile" />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make -f $makefile clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -q -f $makefile" />
+			<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="P8_Fighter_sdl">
+				<Option output="bin/P8_Fighter_sdl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f $makefile" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile " />
+					<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="extern/libmingw32.a" />
+		<Unit filename="src/Action.cpp" />
+		<Unit filename="src/Action.h" />
+		<Unit filename="src/Animation.h" />
+		<Unit filename="src/Combat.cpp" />
+		<Unit filename="src/Combat.h" />
+		<Unit filename="src/Competence.h" />
+		<Unit filename="src/Effet.cpp" />
+		<Unit filename="src/Effet.h" />
+		<Unit filename="src/Environnement.cpp" />
+		<Unit filename="src/Environnement.h" />
+		<Unit filename="src/Etat.cpp" />
+		<Unit filename="src/Etat.h" />
+		<Unit filename="src/Evenement.cpp" />
+		<Unit filename="src/Evenement.h" />
+		<Unit filename="src/Icone.h" />
+		<Unit filename="src/Jauge.h" />
+		<Unit filename="src/Menu.h" />
+		<Unit filename="src/Personnage.cpp" />
+		<Unit filename="src/Personnage.h" />
+		<Unit filename="src/Statistique.cpp" />
+		<Unit filename="src/Statistique.h" />
+		<Unit filename="src/Zone.cpp" />
+		<Unit filename="src/Zone.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/sdlJeu.cpp" />
+		<Unit filename="src/sdlJeu.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
