@@ -154,11 +154,11 @@ void Combat::InitSDL()
     }
 
 	int dimx, dimy;
-	dimx = 2000;
-	dimy = 1500;
+	dimx = 1920;
+	dimy = 1080;
 
     // Creation de la fenetre
-    window = SDL_CreateWindow("P8_Fighter", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, dimx, dimy, SDL_WINDOW_SHOWN);
+    window = SDL_CreateWindow("P8_Fighter", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, dimx, dimy, SDL_WINDOW_SHOWN || SDL_WINDOW_FULLSCREEN_DESKTOP);
     if (window == NULL) {
         cout << "Erreur lors de la creation de la fenetre : " << SDL_GetError() << endl; SDL_Quit(); exit(1);
     }

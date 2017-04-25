@@ -30,11 +30,14 @@ SRC_DIR 			= src
 BIN_DIR 			= bin
 INCLUDE_DIR			= -Isrc
 
+
+P8_Fighter_sdl: make_dir $(BIN_DIR)/$(FINAL_TARGET_SDL)
+
 default: make_dir $(BIN_DIR)/$(FINAL_TARGET_SDL)
 
 make_dir:
 ifeq ($(OS),Windows_NT)
-	if not exist $(OBJ_DIR) mkdir $(OBJ_DIR) $(OBJ_DIR)\src 
+	if not exist $(OBJ_DIR) mkdir $(OBJ_DIR) $(OBJ_DIR)\src
 else
 	mkdir -p $(OBJ_DIR) $(OBJ_DIR)/src
 endif
