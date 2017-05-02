@@ -1,0 +1,702 @@
+\hypertarget{class_personnage}{}\section{Personnage Class Reference}
+\label{class_personnage}\index{Personnage@{Personnage}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_personnage_abec36eb0310adc71f3375297fc590c65}\label{class_personnage_abec36eb0310adc71f3375297fc590c65}} 
+\hyperlink{class_personnage_abec36eb0310adc71f3375297fc590c65}{Personnage} ()
+\begin{DoxyCompactList}\small\item\em constructeur par défaut \end{DoxyCompactList}\item 
+\hyperlink{class_personnage_a010d2aba07a45df0374e0c7df2bcb659}{Personnage} (const char $\ast$i, \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} p, bool o)
+\begin{DoxyCompactList}\small\item\em constructeur par copie \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_personnage_ae2ddf2bf9d9077de27066d559178617b}{getnom\+Image} () const
+\begin{DoxyCompactList}\small\item\em accesseur du nom de l\textquotesingle{}image du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_etat}{Etat} \hyperlink{class_personnage_a91cd89d2c8b00aacae61437e8685ce67}{getetat} () const
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}état du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_a08db6e6280d578c9a6fa7420a4a7dcc3}{get\+Deb1D} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de poing droit debout du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_ab4e39817921a74cb9265307cf52cc3d6}{get\+Deb1G} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de poing gauche debout du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_a5380bd06c8e29368ae0e46069ad527fc}{get\+Deb2D} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de pied droit debout du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_a16e50e2bc84c18d08cd0128b8db0e999}{get\+Deb2G} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de pied gauche debout du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_ad556b91118a0d444c69e6bf0083f2f3d}{get\+Acc1D} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de poing droit accroupi du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_abddbd853934d7bdf5f12f78d3b9c03e1}{get\+Acc1G} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de poing gauche accroupi du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_aa57428d84c280ebbbfd3d39de64607cd}{get\+Acc2D} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de pied droit accroupi du personnage \end{DoxyCompactList}\item 
+\hyperlink{class_action}{Action} \hyperlink{class_personnage_a91c733051d83e5205f10d5e8c3b402bc}{get\+Acc2G} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}action associée à un coup de pied gauche accroupi du personnage \end{DoxyCompactList}\item 
+bool \hyperlink{class_personnage_a5fc5f92a5361fc5b93e8e176331eab3c}{getorientation} () const
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}orientation de l\textquotesingle{}image du personnage \end{DoxyCompactList}\item 
+bool \hyperlink{class_personnage_a98ae46585df4974b6839b6a6e63b9ae9}{getbouclier} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}état du bouclier du personnage \end{DoxyCompactList}\item 
+\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} \hyperlink{class_personnage_ae3d90b3d06aad9e158dfb32a0082eb46}{getposition} () const
+\begin{DoxyCompactList}\small\item\em accesseur de la position du personnage \end{DoxyCompactList}\item 
+\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} \hyperlink{class_personnage_afee72d7981842c259a090260b69a474e}{get\+Hit\+Box\+Perso} () const
+\begin{DoxyCompactList}\small\item\em accesseur de la hitbox du personnage \end{DoxyCompactList}\item 
+\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} \hyperlink{class_personnage_af147a08524f03a17a43a6c6cbb36e7b5}{get\+Hit\+Box\+Att} () const
+\begin{DoxyCompactList}\small\item\em accesseur de la hitbox de l\textquotesingle{}attaque \end{DoxyCompactList}\item 
+\hyperlink{class_statistique}{Statistique} \hyperlink{class_personnage_a972889d9844a547432c2ccd880d13d30}{getstats} ()
+\begin{DoxyCompactList}\small\item\em accesseur des statistiques du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a3e2eb58dd63ec8701752788c25580d1e}{setnom\+Image} (const char $\ast$i)
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}image du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_af9197f8445b5daf12cee30a869e6ec30}{setetat} (\hyperlink{class_etat}{Etat} e)
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}état du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a22db8a02ac16afc4853ec0a5b2596f8f}{set\+Deb1D} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de poing droit debout du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_ac320cfe9ec1e62e354bfe44567c11a3b}{set\+Deb1G} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de poing gauche debout du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_aa09f382676ca2832b24ff3ce13722f9f}{set\+Deb2D} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de pied droit debout du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a7afc1062fc4ebbe529d66e0b0a8d5e84}{set\+Deb2G} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de poing gauche debout du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_aee7eb2a2752f7bec3ef88b39bda2796c}{set\+Acc1D} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de poing droit accroupi du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_aa44ab7df73f244df3ac675661630e7de}{set\+Acc1G} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de poing gauche accroupi du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_abadec9cf87f25796e9467b0c58750a60}{set\+Acc2D} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de pied droit accroupi du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a879d794e4f9f8909b72223e71a11a677}{set\+Acc2G} (\hyperlink{class_action}{Action} a)
+\begin{DoxyCompactList}\small\item\em mutateur du coup de pied gauche accroupi du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a5ebd03957e03f7b81160f767bd51ccf4}{setorientation} (bool o)
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}orientation du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a15950ba47d8b699b3768e13aaace6631}{setbouclier} (bool b)
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}état du bouclier du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a4c28737b88837b44388bd144c198ac6e}{setposition} (\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} p)
+\begin{DoxyCompactList}\small\item\em mutateur de la position du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a7fa6e4b3dcb7760cd4533b57d9df7f77}{set\+Hit\+Box\+Perso} (int a, int b, int c, int d)
+\begin{DoxyCompactList}\small\item\em mutateur de la hitbox d\textquotesingle{}un personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_aba09ef09539b2b44de79cd5c0eb3139d}{set\+Hit\+Box\+Att} (int a, int b, int c, int d)
+\begin{DoxyCompactList}\small\item\em mutateur de la hitbox d\textquotesingle{}une attaque \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_adb15b654ddd26ba1c6944d62b607a163}{setstats} (\hyperlink{class_statistique}{Statistique} s)
+\begin{DoxyCompactList}\small\item\em mutateur des statistiques d\textquotesingle{}un personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_abf011d14740f841ac11580ed4af305d0}{setvie} (int v)
+\begin{DoxyCompactList}\small\item\em mutateur des points de vie du personnafe \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_acc01f2696e2fd76f72e62aec460b9c58}{setvitesse\+\_\+att} (int v)
+\begin{DoxyCompactList}\small\item\em mutateur de la vitesse d\textquotesingle{}attaque du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a83413930bb8bf7989828038c659e315f}{setvitesse\+\_\+depl} (int v)
+\begin{DoxyCompactList}\small\item\em mutateur de la vitesse de déplacement du personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a35571e5e906d9e04f901ac73c6bd9869}{va\+Gauche} (const \hyperlink{class_zone}{Zone} \&z)
+\begin{DoxyCompactList}\small\item\em calcule la position puis déplace le personnage à gauche \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a3f17f84143f3a6f8fcafa1a9ecd5ced6}{va\+Droite} (const \hyperlink{class_zone}{Zone} \&z)
+\begin{DoxyCompactList}\small\item\em calcule la position puis déplace le personnage à droite \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_personnage_ad4433e84bb7db52eef9730a8d82bf2e7}{saute} ()
+\begin{DoxyCompactList}\small\item\em calcule la position puis fait sauter le personnage et change son état \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_personnage_ad883de70d637eacef79d0c1df3d5ce56}\label{class_personnage_ad883de70d637eacef79d0c1df3d5ce56}} 
+void \hyperlink{class_personnage_ad883de70d637eacef79d0c1df3d5ce56}{accroupir} ()
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}état du personnage en accroupi \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_personnage_a35a8f12ff9d675768cd3ba986a63f7f0}\label{class_personnage_a35a8f12ff9d675768cd3ba986a63f7f0}} 
+void \hyperlink{class_personnage_a35a8f12ff9d675768cd3ba986a63f7f0}{descendre} ()
+\begin{DoxyCompactList}\small\item\em calcule la position puis fait atterir le personnage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_personnage_aa7effa244609c3b67e29913422dc73f7}\label{class_personnage_aa7effa244609c3b67e29913422dc73f7}} 
+void \hyperlink{class_personnage_aa7effa244609c3b67e29913422dc73f7}{lever} ()
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}état du personnage en debout \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_personnage_a6ad36c6261ce6f48966d58cf36d193e2}{attaquer} (int i)
+\begin{DoxyCompactList}\small\item\em fais attaquer le personnage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_personnage_a667748af7167778eabc5784fb4edc378}\label{class_personnage_a667748af7167778eabc5784fb4edc378}} 
+void \hyperlink{class_personnage_a667748af7167778eabc5784fb4edc378}{Fin\+Att} ()
+\begin{DoxyCompactList}\small\item\em finit l\textquotesingle{}attaque du personnage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_personnage_a05bdf2a469885bb1fbb6c2e8f98972ab}\label{class_personnage_a05bdf2a469885bb1fbb6c2e8f98972ab}} 
+\hyperlink{class_personnage_a05bdf2a469885bb1fbb6c2e8f98972ab}{$\sim$\+Personnage} ()
+\begin{DoxyCompactList}\small\item\em destructeur du personnage \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_personnage_a010d2aba07a45df0374e0c7df2bcb659}\label{class_personnage_a010d2aba07a45df0374e0c7df2bcb659}} 
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{Personnage()}{Personnage()}}
+{\footnotesize\ttfamily Personnage\+::\+Personnage (\begin{DoxyParamCaption}\item[{const char $\ast$}]{i,  }\item[{\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point}}]{pos,  }\item[{bool}]{o }\end{DoxyParamCaption})}
+
+
+
+constructeur par copie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: pointeur sur l\textquotesingle{}image du personnage \\
+\hline
+{\em pos} & \+: la position du personnage \\
+\hline
+{\em o} & \+: l\textquotesingle{}orientation du sprite \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_personnage_a6ad36c6261ce6f48966d58cf36d193e2}\label{class_personnage_a6ad36c6261ce6f48966d58cf36d193e2}} 
+\index{Personnage@{Personnage}!attaquer@{attaquer}}
+\index{attaquer@{attaquer}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{attaquer()}{attaquer()}}
+{\footnotesize\ttfamily unsigned int Personnage\+::attaquer (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+fais attaquer le personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & l\textquotesingle{}identifiant de l\textquotesingle{}attaque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nombre de ticks pendant lequel le personnage attaque 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_ad556b91118a0d444c69e6bf0083f2f3d}\label{class_personnage_ad556b91118a0d444c69e6bf0083f2f3d}} 
+\index{Personnage@{Personnage}!get\+Acc1D@{get\+Acc1D}}
+\index{get\+Acc1D@{get\+Acc1D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Acc1\+D()}{getAcc1D()}}
+{\footnotesize\ttfamily \hyperlink{class_action}{Action} Personnage\+::get\+Acc1D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de poing droit accroupi du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_abddbd853934d7bdf5f12f78d3b9c03e1}\label{class_personnage_abddbd853934d7bdf5f12f78d3b9c03e1}} 
+\index{Personnage@{Personnage}!get\+Acc1G@{get\+Acc1G}}
+\index{get\+Acc1G@{get\+Acc1G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Acc1\+G()}{getAcc1G()}}
+{\footnotesize\ttfamily \hyperlink{class_action}{Action} Personnage\+::get\+Acc1G (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de poing gauche accroupi du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_aa57428d84c280ebbbfd3d39de64607cd}\label{class_personnage_aa57428d84c280ebbbfd3d39de64607cd}} 
+\index{Personnage@{Personnage}!get\+Acc2D@{get\+Acc2D}}
+\index{get\+Acc2D@{get\+Acc2D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Acc2\+D()}{getAcc2D()}}
+{\footnotesize\ttfamily \hyperlink{class_action}{Action} Personnage\+::get\+Acc2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de pied droit accroupi du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a91c733051d83e5205f10d5e8c3b402bc}\label{class_personnage_a91c733051d83e5205f10d5e8c3b402bc}} 
+\index{Personnage@{Personnage}!get\+Acc2G@{get\+Acc2G}}
+\index{get\+Acc2G@{get\+Acc2G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Acc2\+G()}{getAcc2G()}}
+{\footnotesize\ttfamily \hyperlink{class_action}{Action} Personnage\+::get\+Acc2G (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de pied gauche accroupi du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a98ae46585df4974b6839b6a6e63b9ae9}\label{class_personnage_a98ae46585df4974b6839b6a6e63b9ae9}} 
+\index{Personnage@{Personnage}!getbouclier@{getbouclier}}
+\index{getbouclier@{getbouclier}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{getbouclier()}{getbouclier()}}
+{\footnotesize\ttfamily bool Personnage\+::getbouclier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}état du bouclier du personnage 
+
+\begin{DoxyReturn}{Returns}
+vrai si le bouclier est actif, faux sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a08db6e6280d578c9a6fa7420a4a7dcc3}\label{class_personnage_a08db6e6280d578c9a6fa7420a4a7dcc3}} 
+\index{Personnage@{Personnage}!get\+Deb1D@{get\+Deb1D}}
+\index{get\+Deb1D@{get\+Deb1D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Deb1\+D()}{getDeb1D()}}
+{\footnotesize\ttfamily \hyperlink{class_action}{Action} Personnage\+::get\+Deb1D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de poing droit debout du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_ab4e39817921a74cb9265307cf52cc3d6}\label{class_personnage_ab4e39817921a74cb9265307cf52cc3d6}} 
+\index{Personnage@{Personnage}!get\+Deb1G@{get\+Deb1G}}
+\index{get\+Deb1G@{get\+Deb1G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Deb1\+G()}{getDeb1G()}}
+{\footnotesize\ttfamily \hyperlink{class_action}{Action} Personnage\+::get\+Deb1G (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de poing gauche debout du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a5380bd06c8e29368ae0e46069ad527fc}\label{class_personnage_a5380bd06c8e29368ae0e46069ad527fc}} 
+\index{Personnage@{Personnage}!get\+Deb2D@{get\+Deb2D}}
+\index{get\+Deb2D@{get\+Deb2D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Deb2\+D()}{getDeb2D()}}
+{\footnotesize\ttfamily \hyperlink{class_action}{Action} Personnage\+::get\+Deb2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de pied droit debout du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a16e50e2bc84c18d08cd0128b8db0e999}\label{class_personnage_a16e50e2bc84c18d08cd0128b8db0e999}} 
+\index{Personnage@{Personnage}!get\+Deb2G@{get\+Deb2G}}
+\index{get\+Deb2G@{get\+Deb2G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Deb2\+G()}{getDeb2G()}}
+{\footnotesize\ttfamily Acti \hyperlink{class_action}{Action} Personnage\+::get\+Deb2G (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}action associée à un coup de pied gauche debout du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}action associée. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a91cd89d2c8b00aacae61437e8685ce67}\label{class_personnage_a91cd89d2c8b00aacae61437e8685ce67}} 
+\index{Personnage@{Personnage}!getetat@{getetat}}
+\index{getetat@{getetat}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{getetat()}{getetat()}}
+{\footnotesize\ttfamily \hyperlink{class_etat}{Etat} Personnage\+::getetat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+accesseur de l\textquotesingle{}état du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}état du personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_af147a08524f03a17a43a6c6cbb36e7b5}\label{class_personnage_af147a08524f03a17a43a6c6cbb36e7b5}} 
+\index{Personnage@{Personnage}!get\+Hit\+Box\+Att@{get\+Hit\+Box\+Att}}
+\index{get\+Hit\+Box\+Att@{get\+Hit\+Box\+Att}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Hit\+Box\+Att()}{getHitBoxAtt()}}
+{\footnotesize\ttfamily \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} Personnage\+::get\+Hit\+Box\+Att (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+accesseur de la hitbox de l\textquotesingle{}attaque 
+
+\begin{DoxyReturn}{Returns}
+la hitbox de l\textquotesingle{}attaque 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_afee72d7981842c259a090260b69a474e}\label{class_personnage_afee72d7981842c259a090260b69a474e}} 
+\index{Personnage@{Personnage}!get\+Hit\+Box\+Perso@{get\+Hit\+Box\+Perso}}
+\index{get\+Hit\+Box\+Perso@{get\+Hit\+Box\+Perso}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{get\+Hit\+Box\+Perso()}{getHitBoxPerso()}}
+{\footnotesize\ttfamily \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} Personnage\+::get\+Hit\+Box\+Perso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+accesseur de la hitbox du personnage 
+
+\begin{DoxyReturn}{Returns}
+la hitbox du personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_ae2ddf2bf9d9077de27066d559178617b}\label{class_personnage_ae2ddf2bf9d9077de27066d559178617b}} 
+\index{Personnage@{Personnage}!getnom\+Image@{getnom\+Image}}
+\index{getnom\+Image@{getnom\+Image}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{getnom\+Image()}{getnomImage()}}
+{\footnotesize\ttfamily const char $\ast$ Personnage\+::getnom\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+accesseur du nom de l\textquotesingle{}image du personnage 
+
+\begin{DoxyReturn}{Returns}
+le nom de l\textquotesingle{}image du personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a5fc5f92a5361fc5b93e8e176331eab3c}\label{class_personnage_a5fc5f92a5361fc5b93e8e176331eab3c}} 
+\index{Personnage@{Personnage}!getorientation@{getorientation}}
+\index{getorientation@{getorientation}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{getorientation()}{getorientation()}}
+{\footnotesize\ttfamily bool Personnage\+::getorientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+accesseur de l\textquotesingle{}orientation de l\textquotesingle{}image du personnage 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}orientation du personnage (gauche/droite) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_ae3d90b3d06aad9e158dfb32a0082eb46}\label{class_personnage_ae3d90b3d06aad9e158dfb32a0082eb46}} 
+\index{Personnage@{Personnage}!getposition@{getposition}}
+\index{getposition@{getposition}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{getposition()}{getposition()}}
+{\footnotesize\ttfamily \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} Personnage\+::getposition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+accesseur de la position du personnage 
+
+\begin{DoxyReturn}{Returns}
+le point originaire de la position du personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_a972889d9844a547432c2ccd880d13d30}\label{class_personnage_a972889d9844a547432c2ccd880d13d30}} 
+\index{Personnage@{Personnage}!getstats@{getstats}}
+\index{getstats@{getstats}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{getstats()}{getstats()}}
+{\footnotesize\ttfamily \hyperlink{class_statistique}{Statistique} Personnage\+::getstats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur des statistiques du personnage 
+
+\begin{DoxyReturn}{Returns}
+les statistiques du personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_personnage_ad4433e84bb7db52eef9730a8d82bf2e7}\label{class_personnage_ad4433e84bb7db52eef9730a8d82bf2e7}} 
+\index{Personnage@{Personnage}!saute@{saute}}
+\index{saute@{saute}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{saute()}{saute()}}
+{\footnotesize\ttfamily unsigned int Personnage\+::saute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calcule la position puis fait sauter le personnage et change son état 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \+: la zone dans laquelle le personnage évolue \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_aee7eb2a2752f7bec3ef88b39bda2796c}\label{class_personnage_aee7eb2a2752f7bec3ef88b39bda2796c}} 
+\index{Personnage@{Personnage}!set\+Acc1D@{set\+Acc1D}}
+\index{set\+Acc1D@{set\+Acc1D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Acc1\+D()}{setAcc1D()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Acc1D (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de poing droit accroupi du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de poing droit accroupi est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_aa44ab7df73f244df3ac675661630e7de}\label{class_personnage_aa44ab7df73f244df3ac675661630e7de}} 
+\index{Personnage@{Personnage}!set\+Acc1G@{set\+Acc1G}}
+\index{set\+Acc1G@{set\+Acc1G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Acc1\+G()}{setAcc1G()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Acc1G (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de poing gauche accroupi du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de poing gauche accroupi est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_abadec9cf87f25796e9467b0c58750a60}\label{class_personnage_abadec9cf87f25796e9467b0c58750a60}} 
+\index{Personnage@{Personnage}!set\+Acc2D@{set\+Acc2D}}
+\index{set\+Acc2D@{set\+Acc2D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Acc2\+D()}{setAcc2D()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Acc2D (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de pied droit accroupi du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de pied droit accroupi est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a879d794e4f9f8909b72223e71a11a677}\label{class_personnage_a879d794e4f9f8909b72223e71a11a677}} 
+\index{Personnage@{Personnage}!set\+Acc2G@{set\+Acc2G}}
+\index{set\+Acc2G@{set\+Acc2G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Acc2\+G()}{setAcc2G()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Acc2G (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de pied gauche accroupi du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de pied gauche accroupi est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a15950ba47d8b699b3768e13aaace6631}\label{class_personnage_a15950ba47d8b699b3768e13aaace6631}} 
+\index{Personnage@{Personnage}!setbouclier@{setbouclier}}
+\index{setbouclier@{setbouclier}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setbouclier()}{setbouclier()}}
+{\footnotesize\ttfamily void Personnage\+::setbouclier (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+mutateur de l\textquotesingle{}état du bouclier du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & la valeur de bouclier, vrai pour actif, faux sinon \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a22db8a02ac16afc4853ec0a5b2596f8f}\label{class_personnage_a22db8a02ac16afc4853ec0a5b2596f8f}} 
+\index{Personnage@{Personnage}!set\+Deb1D@{set\+Deb1D}}
+\index{set\+Deb1D@{set\+Deb1D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Deb1\+D()}{setDeb1D()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Deb1D (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de poing droit debout du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de poing droit debout est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_ac320cfe9ec1e62e354bfe44567c11a3b}\label{class_personnage_ac320cfe9ec1e62e354bfe44567c11a3b}} 
+\index{Personnage@{Personnage}!set\+Deb1G@{set\+Deb1G}}
+\index{set\+Deb1G@{set\+Deb1G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Deb1\+G()}{setDeb1G()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Deb1G (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de poing gauche debout du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de poing gauche debout est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_aa09f382676ca2832b24ff3ce13722f9f}\label{class_personnage_aa09f382676ca2832b24ff3ce13722f9f}} 
+\index{Personnage@{Personnage}!set\+Deb2D@{set\+Deb2D}}
+\index{set\+Deb2D@{set\+Deb2D}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Deb2\+D()}{setDeb2D()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Deb2D (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de pied droit debout du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de pied droit debout est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a7afc1062fc4ebbe529d66e0b0a8d5e84}\label{class_personnage_a7afc1062fc4ebbe529d66e0b0a8d5e84}} 
+\index{Personnage@{Personnage}!set\+Deb2G@{set\+Deb2G}}
+\index{set\+Deb2G@{set\+Deb2G}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Deb2\+G()}{setDeb2G()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Deb2G (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action}}]{a }\end{DoxyParamCaption})}
+
+
+
+mutateur du coup de poing gauche debout du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: la nouvelle action a effectuer lorsqu\textquotesingle{}un coup de poing gauche debout est déclenché \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_af9197f8445b5daf12cee30a869e6ec30}\label{class_personnage_af9197f8445b5daf12cee30a869e6ec30}} 
+\index{Personnage@{Personnage}!setetat@{setetat}}
+\index{setetat@{setetat}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setetat()}{setetat()}}
+{\footnotesize\ttfamily void Personnage\+::setetat (\begin{DoxyParamCaption}\item[{\hyperlink{class_etat}{Etat}}]{e }\end{DoxyParamCaption})}
+
+
+
+mutateur de l\textquotesingle{}état du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \+: le nouvel état du personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_aba09ef09539b2b44de79cd5c0eb3139d}\label{class_personnage_aba09ef09539b2b44de79cd5c0eb3139d}} 
+\index{Personnage@{Personnage}!set\+Hit\+Box\+Att@{set\+Hit\+Box\+Att}}
+\index{set\+Hit\+Box\+Att@{set\+Hit\+Box\+Att}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Hit\+Box\+Att()}{setHitBoxAtt()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Hit\+Box\+Att (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{c,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+mutateur de la hitbox d\textquotesingle{}une attaque 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & la nouvelle coordonnée x du point d\textquotesingle{}origine du nouveau rectangle \\
+\hline
+{\em b} & la nouvelle coordonnée y du point d\textquotesingle{}origine du nouveau rectangle \\
+\hline
+{\em c} & la nouvelle largeur du nouveau rectangle \\
+\hline
+{\em d} & la nouvelle hauteur du nouveau rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a7fa6e4b3dcb7760cd4533b57d9df7f77}\label{class_personnage_a7fa6e4b3dcb7760cd4533b57d9df7f77}} 
+\index{Personnage@{Personnage}!set\+Hit\+Box\+Perso@{set\+Hit\+Box\+Perso}}
+\index{set\+Hit\+Box\+Perso@{set\+Hit\+Box\+Perso}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{set\+Hit\+Box\+Perso()}{setHitBoxPerso()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Hit\+Box\+Perso (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{c,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+mutateur de la hitbox d\textquotesingle{}un personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & la nouvelle coordonnée x du point d\textquotesingle{}origine du nouveau rectangle \\
+\hline
+{\em b} & la nouvelle coordonnée y du point d\textquotesingle{}origine du nouveau rectangle \\
+\hline
+{\em c} & la nouvelle largeur du nouveau rectangle \\
+\hline
+{\em d} & la nouvelle hauteur du nouveau rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a3e2eb58dd63ec8701752788c25580d1e}\label{class_personnage_a3e2eb58dd63ec8701752788c25580d1e}} 
+\index{Personnage@{Personnage}!setnom\+Image@{setnom\+Image}}
+\index{setnom\+Image@{setnom\+Image}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setnom\+Image()}{setnomImage()}}
+{\footnotesize\ttfamily void Personnage\+::setnom\+Image (\begin{DoxyParamCaption}\item[{const char $\ast$}]{i }\end{DoxyParamCaption})}
+
+
+
+mutateur de l\textquotesingle{}image du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: le nom de la nouvelle image du personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a5ebd03957e03f7b81160f767bd51ccf4}\label{class_personnage_a5ebd03957e03f7b81160f767bd51ccf4}} 
+\index{Personnage@{Personnage}!setorientation@{setorientation}}
+\index{setorientation@{setorientation}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setorientation()}{setorientation()}}
+{\footnotesize\ttfamily void Personnage\+::setorientation (\begin{DoxyParamCaption}\item[{bool}]{o }\end{DoxyParamCaption})}
+
+
+
+mutateur de l\textquotesingle{}orientation du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & \+: l\textquotesingle{}orientation du personnage (gauche/droite) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a4c28737b88837b44388bd144c198ac6e}\label{class_personnage_a4c28737b88837b44388bd144c198ac6e}} 
+\index{Personnage@{Personnage}!setposition@{setposition}}
+\index{setposition@{setposition}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setposition()}{setposition()}}
+{\footnotesize\ttfamily void Personnage\+::setposition (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point}}]{p }\end{DoxyParamCaption})}
+
+
+
+mutateur de la position du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & la nouvelle position du personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_adb15b654ddd26ba1c6944d62b607a163}\label{class_personnage_adb15b654ddd26ba1c6944d62b607a163}} 
+\index{Personnage@{Personnage}!setstats@{setstats}}
+\index{setstats@{setstats}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setstats()}{setstats()}}
+{\footnotesize\ttfamily void Personnage\+::setstats (\begin{DoxyParamCaption}\item[{\hyperlink{class_statistique}{Statistique}}]{s }\end{DoxyParamCaption})}
+
+
+
+mutateur des statistiques d\textquotesingle{}un personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & les nouvelles statistiques du personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_abf011d14740f841ac11580ed4af305d0}\label{class_personnage_abf011d14740f841ac11580ed4af305d0}} 
+\index{Personnage@{Personnage}!setvie@{setvie}}
+\index{setvie@{setvie}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setvie()}{setvie()}}
+{\footnotesize\ttfamily void Personnage\+::setvie (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+mutateur des points de vie du personnafe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & les nouveaux points de vie du personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_acc01f2696e2fd76f72e62aec460b9c58}\label{class_personnage_acc01f2696e2fd76f72e62aec460b9c58}} 
+\index{Personnage@{Personnage}!setvitesse\+\_\+att@{setvitesse\+\_\+att}}
+\index{setvitesse\+\_\+att@{setvitesse\+\_\+att}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setvitesse\+\_\+att()}{setvitesse\_att()}}
+{\footnotesize\ttfamily void Personnage\+::setvitesse\+\_\+att (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+mutateur de la vitesse d\textquotesingle{}attaque du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \+: la nouvelle vitesse d\textquotesingle{}attaque \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a83413930bb8bf7989828038c659e315f}\label{class_personnage_a83413930bb8bf7989828038c659e315f}} 
+\index{Personnage@{Personnage}!setvitesse\+\_\+depl@{setvitesse\+\_\+depl}}
+\index{setvitesse\+\_\+depl@{setvitesse\+\_\+depl}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{setvitesse\+\_\+depl()}{setvitesse\_depl()}}
+{\footnotesize\ttfamily void Personnage\+::setvitesse\+\_\+depl (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+mutateur de la vitesse de déplacement du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \+: la nouvelle vitesse de déplacement \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a3f17f84143f3a6f8fcafa1a9ecd5ced6}\label{class_personnage_a3f17f84143f3a6f8fcafa1a9ecd5ced6}} 
+\index{Personnage@{Personnage}!va\+Droite@{va\+Droite}}
+\index{va\+Droite@{va\+Droite}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{va\+Droite()}{vaDroite()}}
+{\footnotesize\ttfamily void Personnage\+::va\+Droite (\begin{DoxyParamCaption}\item[{const \hyperlink{class_zone}{Zone} \&}]{z }\end{DoxyParamCaption})}
+
+
+
+calcule la position puis déplace le personnage à droite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \+: la zone dans laquelle le personnage évolue \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_personnage_a35571e5e906d9e04f901ac73c6bd9869}\label{class_personnage_a35571e5e906d9e04f901ac73c6bd9869}} 
+\index{Personnage@{Personnage}!va\+Gauche@{va\+Gauche}}
+\index{va\+Gauche@{va\+Gauche}!Personnage@{Personnage}}
+\subsubsection{\texorpdfstring{va\+Gauche()}{vaGauche()}}
+{\footnotesize\ttfamily void Personnage\+::va\+Gauche (\begin{DoxyParamCaption}\item[{const \hyperlink{class_zone}{Zone} \&}]{z }\end{DoxyParamCaption})}
+
+
+
+calcule la position puis déplace le personnage à gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \+: la zone dans laquelle le personnage évolue \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/Personnage.\+h\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/\hyperlink{_personnage_8cpp}{Personnage.\+cpp}\end{DoxyCompactItemize}

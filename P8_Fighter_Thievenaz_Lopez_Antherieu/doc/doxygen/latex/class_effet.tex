@@ -1,0 +1,141 @@
+\hypertarget{class_effet}{}\section{Effet Class Reference}
+\label{class_effet}\index{Effet@{Effet}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_effet_a79744b45fc5715a4742e63565d4f89cb}\label{class_effet_a79744b45fc5715a4742e63565d4f89cb}} 
+\hyperlink{class_effet_a79744b45fc5715a4742e63565d4f89cb}{Effet} ()
+\begin{DoxyCompactList}\small\item\em constructeur par défaut \end{DoxyCompactList}\item 
+\hyperlink{class_effet_a793d5ee7b9ce4823c7a371f12541926b}{Effet} (bool b, float stat, float val)
+\begin{DoxyCompactList}\small\item\em constructeur par copie \end{DoxyCompactList}\item 
+bool \hyperlink{class_effet_a99cf9637e0ed68c90cd98ddb19c19e68}{getbouclier} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}effet de bouclier \end{DoxyCompactList}\item 
+float \hyperlink{class_effet_af21dd5e23b89da498d15db88dc3a7f9a}{getstat\+\_\+modif} ()
+\begin{DoxyCompactList}\small\item\em accesseur du type de statistique ciblé \end{DoxyCompactList}\item 
+float \hyperlink{class_effet_ab2d5a682efec0dccf72fcfbe6b500452}{getval\+\_\+modif} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la valeur de modification de la statistique ciblée \end{DoxyCompactList}\item 
+void \hyperlink{class_effet_ac165d923d0eb00307c5cfbc380e3dfec}{setbouclier} (bool b)
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}effet de bouclier \end{DoxyCompactList}\item 
+void \hyperlink{class_effet_a548b4e57e29666bc44a88a68936cf136}{setstat\+\_\+modif} (float stat)
+\begin{DoxyCompactList}\small\item\em mutateur du type de statistique ciblé \end{DoxyCompactList}\item 
+void \hyperlink{class_effet_a4a50cf5cc8c45e037084948fadf9274c}{setval\+\_\+modif} (float val)
+\begin{DoxyCompactList}\small\item\em mutateur de la valeur de modification de la statistique ciblée \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_effet_a8bacc915cc7c148661bde9c9c732b6dd}\label{class_effet_a8bacc915cc7c148661bde9c9c732b6dd}} 
+\hyperlink{class_effet_a8bacc915cc7c148661bde9c9c732b6dd}{$\sim$\+Effet} ()
+\begin{DoxyCompactList}\small\item\em destructeur de l\textquotesingle{}effet \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_effet_a793d5ee7b9ce4823c7a371f12541926b}\label{class_effet_a793d5ee7b9ce4823c7a371f12541926b}} 
+\index{Effet@{Effet}!Effet@{Effet}}
+\index{Effet@{Effet}!Effet@{Effet}}
+\subsubsection{\texorpdfstring{Effet()}{Effet()}}
+{\footnotesize\ttfamily Effet\+::\+Effet (\begin{DoxyParamCaption}\item[{bool}]{b,  }\item[{float}]{stat,  }\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+constructeur par copie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: booléen qui décrit si l\textquotesingle{}effet donne un bouclier au joueur \\
+\hline
+{\em stat\+\_\+modif} & \+: 0 si la modification porte sur la vie, 1 si elle porte sur les vitesses d\textquotesingle{}attaque et de déplacemenet \\
+\hline
+{\em val} & \+: valeur de modification de de la statistique ciblée \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_effet_a99cf9637e0ed68c90cd98ddb19c19e68}\label{class_effet_a99cf9637e0ed68c90cd98ddb19c19e68}} 
+\index{Effet@{Effet}!getbouclier@{getbouclier}}
+\index{getbouclier@{getbouclier}!Effet@{Effet}}
+\subsubsection{\texorpdfstring{getbouclier()}{getbouclier()}}
+{\footnotesize\ttfamily bool Effet\+::getbouclier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}effet de bouclier 
+
+\begin{DoxyReturn}{Returns}
+vrai si l\textquotesingle{}effet procure un bouclier, faux sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effet_af21dd5e23b89da498d15db88dc3a7f9a}\label{class_effet_af21dd5e23b89da498d15db88dc3a7f9a}} 
+\index{Effet@{Effet}!getstat\+\_\+modif@{getstat\+\_\+modif}}
+\index{getstat\+\_\+modif@{getstat\+\_\+modif}!Effet@{Effet}}
+\subsubsection{\texorpdfstring{getstat\+\_\+modif()}{getstat\_modif()}}
+{\footnotesize\ttfamily float Effet\+::getstat\+\_\+modif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur du type de statistique ciblé 
+
+\begin{DoxyReturn}{Returns}
+0 si la modification porte sur la vie, 1 si elle porte sur les vitesses d\textquotesingle{}attaque et de déplacemenet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effet_ab2d5a682efec0dccf72fcfbe6b500452}\label{class_effet_ab2d5a682efec0dccf72fcfbe6b500452}} 
+\index{Effet@{Effet}!getval\+\_\+modif@{getval\+\_\+modif}}
+\index{getval\+\_\+modif@{getval\+\_\+modif}!Effet@{Effet}}
+\subsubsection{\texorpdfstring{getval\+\_\+modif()}{getval\_modif()}}
+{\footnotesize\ttfamily float Effet\+::getval\+\_\+modif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la valeur de modification de la statistique ciblée 
+
+\begin{DoxyReturn}{Returns}
+la valeur de modification 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effet_ac165d923d0eb00307c5cfbc380e3dfec}\label{class_effet_ac165d923d0eb00307c5cfbc380e3dfec}} 
+\index{Effet@{Effet}!setbouclier@{setbouclier}}
+\index{setbouclier@{setbouclier}!Effet@{Effet}}
+\subsubsection{\texorpdfstring{setbouclier()}{setbouclier()}}
+{\footnotesize\ttfamily void Effet\+::setbouclier (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+mutateur de l\textquotesingle{}effet de bouclier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & 0 s\textquotesingle{}il ne procure pas de bouclier, 1 s\textquotesingle{}il en procure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effet_a548b4e57e29666bc44a88a68936cf136}\label{class_effet_a548b4e57e29666bc44a88a68936cf136}} 
+\index{Effet@{Effet}!setstat\+\_\+modif@{setstat\+\_\+modif}}
+\index{setstat\+\_\+modif@{setstat\+\_\+modif}!Effet@{Effet}}
+\subsubsection{\texorpdfstring{setstat\+\_\+modif()}{setstat\_modif()}}
+{\footnotesize\ttfamily void Effet\+::setstat\+\_\+modif (\begin{DoxyParamCaption}\item[{float}]{stat }\end{DoxyParamCaption})}
+
+
+
+mutateur du type de statistique ciblé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & 0 si la modification porte sur la vie, 1 si elle porte sur les vitesses d\textquotesingle{}attaque et de déplacemenet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effet_a4a50cf5cc8c45e037084948fadf9274c}\label{class_effet_a4a50cf5cc8c45e037084948fadf9274c}} 
+\index{Effet@{Effet}!setval\+\_\+modif@{setval\+\_\+modif}}
+\index{setval\+\_\+modif@{setval\+\_\+modif}!Effet@{Effet}}
+\subsubsection{\texorpdfstring{setval\+\_\+modif()}{setval\_modif()}}
+{\footnotesize\ttfamily void Effet\+::setval\+\_\+modif (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+mutateur de la valeur de modification de la statistique ciblée 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & la nouvelle valeur de modification \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/Effet.\+h\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/\hyperlink{_effet_8cpp}{Effet.\+cpp}\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/Effet2.\+cpp\end{DoxyCompactItemize}

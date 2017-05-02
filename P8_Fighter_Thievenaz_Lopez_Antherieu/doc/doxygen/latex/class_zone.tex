@@ -1,0 +1,131 @@
+\hypertarget{class_zone}{}\section{Zone Class Reference}
+\label{class_zone}\index{Zone@{Zone}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_zone_a37c9721c0d592a7a231f4e6dbae93277}\label{class_zone_a37c9721c0d592a7a231f4e6dbae93277}} 
+\hyperlink{class_zone_a37c9721c0d592a7a231f4e6dbae93277}{Zone} ()
+\begin{DoxyCompactList}\small\item\em constructeur par défaut \end{DoxyCompactList}\item 
+\hyperlink{class_zone_ac28e36a038ec6cb04ca2fdda3c5de592}{Zone} (int i)
+\begin{DoxyCompactList}\small\item\em constructeur par copie \end{DoxyCompactList}\item 
+\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} \hyperlink{class_zone_aa040a486aee97a63701e15b185c5b91f}{gettab} (int pos)
+\begin{DoxyCompactList}\small\item\em accesseur du rectangle a la position pos dans le tableau \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_zone_a3b912f09ced97f72f772b82934ea298a}{getnb\+\_\+rectangle} ()
+\begin{DoxyCompactList}\small\item\em accesseur du nombre de rectangles qui composent la zone \end{DoxyCompactList}\item 
+void \hyperlink{class_zone_a26eac0fb6a0564237b4798cbba78eee7}{settab} (int pos, \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} r)
+\begin{DoxyCompactList}\small\item\em mutateur d\textquotesingle{}un rectangle de la zone \end{DoxyCompactList}\item 
+void \hyperlink{class_zone_a42a69a501d277a5e32f7a76484e7a63f}{setnb\+\_\+rectangle} (int n)
+\begin{DoxyCompactList}\small\item\em mutateur du nombre de rectangles présents dans la zone \end{DoxyCompactList}\item 
+bool \hyperlink{class_zone_a187bd444ec09f9ec44a86456c5b84611}{inclusion\+Point} (const \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} $\ast$p) const
+\begin{DoxyCompactList}\small\item\em teste la présence d\textquotesingle{}un point p dans la zone \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_zone_a2e4081537d40f5a08a78645a632b2230}\label{class_zone_a2e4081537d40f5a08a78645a632b2230}} 
+void {\bfseries test\+Regression} ()
+\item 
+\mbox{\Hypertarget{class_zone_a562607cb5c4120a9316c5e967a5c610b}\label{class_zone_a562607cb5c4120a9316c5e967a5c610b}} 
+\hyperlink{class_zone_a562607cb5c4120a9316c5e967a5c610b}{$\sim$\+Zone} ()
+\begin{DoxyCompactList}\small\item\em destructeur de la zone \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_zone_ac28e36a038ec6cb04ca2fdda3c5de592}\label{class_zone_ac28e36a038ec6cb04ca2fdda3c5de592}} 
+\index{Zone@{Zone}!Zone@{Zone}}
+\index{Zone@{Zone}!Zone@{Zone}}
+\subsubsection{\texorpdfstring{Zone()}{Zone()}}
+{\footnotesize\ttfamily Zone\+::\+Zone (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+constructeur par copie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: nombre de rectangles compris dans la nouvelle zone \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_zone_a3b912f09ced97f72f772b82934ea298a}\label{class_zone_a3b912f09ced97f72f772b82934ea298a}} 
+\index{Zone@{Zone}!getnb\+\_\+rectangle@{getnb\+\_\+rectangle}}
+\index{getnb\+\_\+rectangle@{getnb\+\_\+rectangle}!Zone@{Zone}}
+\subsubsection{\texorpdfstring{getnb\+\_\+rectangle()}{getnb\_rectangle()}}
+{\footnotesize\ttfamily unsigned int Zone\+::getnb\+\_\+rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur du nombre de rectangles qui composent la zone 
+
+\begin{DoxyReturn}{Returns}
+le nombre de rectangles qui composent zone 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zone_aa040a486aee97a63701e15b185c5b91f}\label{class_zone_aa040a486aee97a63701e15b185c5b91f}} 
+\index{Zone@{Zone}!gettab@{gettab}}
+\index{gettab@{gettab}!Zone@{Zone}}
+\subsubsection{\texorpdfstring{gettab()}{gettab()}}
+{\footnotesize\ttfamily \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} Zone\+::gettab (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+accesseur du rectangle a la position pos dans le tableau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zone_a187bd444ec09f9ec44a86456c5b84611}\label{class_zone_a187bd444ec09f9ec44a86456c5b84611}} 
+\index{Zone@{Zone}!inclusion\+Point@{inclusion\+Point}}
+\index{inclusion\+Point@{inclusion\+Point}!Zone@{Zone}}
+\subsubsection{\texorpdfstring{inclusion\+Point()}{inclusionPoint()}}
+{\footnotesize\ttfamily bool Zone\+::inclusion\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} $\ast$}]{p }\end{DoxyParamCaption}) const}
+
+
+
+teste la présence d\textquotesingle{}un point p dans la zone 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: le point a tester \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_zone_a42a69a501d277a5e32f7a76484e7a63f}\label{class_zone_a42a69a501d277a5e32f7a76484e7a63f}} 
+\index{Zone@{Zone}!setnb\+\_\+rectangle@{setnb\+\_\+rectangle}}
+\index{setnb\+\_\+rectangle@{setnb\+\_\+rectangle}!Zone@{Zone}}
+\subsubsection{\texorpdfstring{setnb\+\_\+rectangle()}{setnb\_rectangle()}}
+{\footnotesize\ttfamily void Zone\+::setnb\+\_\+rectangle (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+mutateur du nombre de rectangles présents dans la zone 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & le nouveau nombre de rectangles \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_zone_a26eac0fb6a0564237b4798cbba78eee7}\label{class_zone_a26eac0fb6a0564237b4798cbba78eee7}} 
+\index{Zone@{Zone}!settab@{settab}}
+\index{settab@{settab}!Zone@{Zone}}
+\subsubsection{\texorpdfstring{settab()}{settab()}}
+{\footnotesize\ttfamily void Zone\+::settab (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}}]{r }\end{DoxyParamCaption})}
+
+
+
+mutateur d\textquotesingle{}un rectangle de la zone 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \+: la position du rectangle a modifier \\
+\hline
+{\em r} & \+: le rectangle qui vient remplacer le précédent rectangle a cette position \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/Zone.\+h\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/\hyperlink{_zone_8cpp}{Zone.\+cpp}\end{DoxyCompactItemize}

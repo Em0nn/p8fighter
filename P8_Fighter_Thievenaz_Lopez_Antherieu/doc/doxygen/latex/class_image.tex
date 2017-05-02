@@ -1,0 +1,73 @@
+\hypertarget{class_image}{}\section{Image Class Reference}
+\label{class_image}\index{Image@{Image}}
+
+
+Pour gÈrer une image avec S\+D\+L2.  
+
+
+
+
+{\ttfamily \#include $<$sdl\+Jeu.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_a58edd1c45b4faeb5f789b0d036d02313}\label{class_image_a58edd1c45b4faeb5f789b0d036d02313}} 
+\hyperlink{class_image_a58edd1c45b4faeb5f789b0d036d02313}{Image} ()
+\begin{DoxyCompactList}\small\item\em constructeur par d√©faut \end{DoxyCompactList}\item 
+void \hyperlink{class_image_aa276b5183099671ddeaf8f083068046c}{load\+From\+File} (const char $\ast$filename, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em fonction de chargement des images \end{DoxyCompactList}\item 
+void \hyperlink{class_image_a82d6936d466ba0161d8b9cbacf613de5}{draw} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, int x, int y, int w=-\/1, int h=-\/1)
+\begin{DoxyCompactList}\small\item\em fonction qui dessine sur le buffer cach√© \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pour gÈrer une image avec S\+D\+L2. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_a82d6936d466ba0161d8b9cbacf613de5}\label{class_image_a82d6936d466ba0161d8b9cbacf613de5}} 
+\index{Image@{Image}!draw@{draw}}
+\index{draw@{draw}!Image@{Image}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Image\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w = {\ttfamily -\/1},  }\item[{int}]{h = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+fonction qui dessine sur le buffer cach√© 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & le rendu S\+DL \\
+\hline
+{\em x} & position x de l\textquotesingle{}image \\
+\hline
+{\em y} & position y de l\textquotesingle{}image \\
+\hline
+{\em w} & la largeur de l\textquotesingle{}image \\
+\hline
+{\em h} & la hauteur de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_image_aa276b5183099671ddeaf8f083068046c}\label{class_image_aa276b5183099671ddeaf8f083068046c}} 
+\index{Image@{Image}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!Image@{Image}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily void Image\+::load\+From\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+fonction de chargement des images 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & nom du fichier \\
+\hline
+{\em renderer} & le rendu S\+DL \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/sdl\+Jeu.\+h\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/\hyperlink{sdl_jeu_8cpp}{sdl\+Jeu.\+cpp}\end{DoxyCompactItemize}

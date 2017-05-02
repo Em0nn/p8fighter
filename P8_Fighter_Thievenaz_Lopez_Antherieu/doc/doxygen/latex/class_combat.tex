@@ -1,0 +1,330 @@
+\hypertarget{class_combat}{}\section{Combat Class Reference}
+\label{class_combat}\index{Combat@{Combat}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_combat_a4c2dfed2f9da749ae341de25c7427f73}{Combat} ()
+\begin{DoxyCompactList}\small\item\em constructeur par dÃ©faut \end{DoxyCompactList}\item 
+\hyperlink{class_combat_a68fe912e149a1c53ef3bfe9ffb47057b}{Combat} (\hyperlink{class_personnage}{Personnage} J, \hyperlink{class_personnage}{Personnage} T, bool e, \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} pos\+Ju, \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} pos\+Tancou)
+\begin{DoxyCompactList}\small\item\em constructeur \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_a044df77ec24b76ca8b1cc3dde0de5049}\label{class_combat_a044df77ec24b76ca8b1cc3dde0de5049}} 
+\hyperlink{class_combat_a044df77ec24b76ca8b1cc3dde0de5049}{$\sim$\+Combat} ()
+\begin{DoxyCompactList}\small\item\em destructeur \end{DoxyCompactList}\item 
+\hyperlink{class_personnage}{Personnage} \hyperlink{class_combat_a4ecb5ed017bda47a51c9caa0c733f6c5}{getJ} ()
+\begin{DoxyCompactList}\small\item\em accesseur du premier personnage \end{DoxyCompactList}\item 
+\hyperlink{class_personnage}{Personnage} \hyperlink{class_combat_a4a7894cfb76e4c19b4934daafec4619f}{getT} ()
+\begin{DoxyCompactList}\small\item\em accesseur du second personnage \end{DoxyCompactList}\item 
+\hyperlink{class_evenement}{Evenement} \hyperlink{class_combat_a6e9d7634fc0907b836f71df6a635d0b5}{getevent} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}évenement en cours \end{DoxyCompactList}\item 
+bool \hyperlink{class_combat_ae336f7422580f19eb41570045847b75c}{getevent\+Dispo} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la disponibilité d\textquotesingle{}un évenement \end{DoxyCompactList}\item 
+\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} \hyperlink{class_combat_ac42d190e096174b0edbd96144698d89b}{get\+PosJ} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la position du premier personnage \end{DoxyCompactList}\item 
+\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} \hyperlink{class_combat_a47cb1210023a7473f985b937718fa6f5}{get\+PosT} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la position du second personnage \end{DoxyCompactList}\item 
+\hyperlink{class_zone}{Zone} \hyperlink{class_combat_a7288e155937ed0e36f7a8db17b35959e}{get\+Decor} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la zone de combat \end{DoxyCompactList}\item 
+void \hyperlink{class_combat_a9497b0462891bb6e9eb4fa43eed87134}{setJ} (\hyperlink{class_personnage}{Personnage} Ju)
+\begin{DoxyCompactList}\small\item\em mutateur du premier personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_combat_ae18bfeb65c4c3ae29d648e7d32b0e58c}{setT} (\hyperlink{class_personnage}{Personnage} Tancou)
+\begin{DoxyCompactList}\small\item\em mutateur du second personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_combat_a4d4d1bba42f000b435bd06e957ab8740}{setevent} (\hyperlink{class_evenement}{Evenement} e)
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}évenement en cours \end{DoxyCompactList}\item 
+void \hyperlink{class_combat_a10458f8d5934df3b2b48a9a93f79c3d7}{setevent\+Dispo} (bool e)
+\begin{DoxyCompactList}\small\item\em mutateur de la disponibilité de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+void \hyperlink{class_combat_a558ad6162789bf7cde9c69e95470305d}{set\+PosJ} (\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} ptJ)
+\begin{DoxyCompactList}\small\item\em mutateur de la position du premier personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_combat_a5ad40745772e874d6672605d41c04add}{set\+PosT} (\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} ptT)
+\begin{DoxyCompactList}\small\item\em mutateur de la position du second personnage \end{DoxyCompactList}\item 
+void \hyperlink{class_combat_ad59833da74f2b727dd42f76eec96bb1f}{set\+Decor} (\hyperlink{class_zone}{Zone} d)
+\begin{DoxyCompactList}\small\item\em mutateur de la zone de combat \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_ae3a7fd65f0efc8b6aba792691c1b979b}\label{class_combat_ae3a7fd65f0efc8b6aba792691c1b979b}} 
+void \hyperlink{class_combat_ae3a7fd65f0efc8b6aba792691c1b979b}{Init\+S\+DL} ()
+\begin{DoxyCompactList}\small\item\em fonction d\textquotesingle{}initialisation de la S\+DL \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_a86ae984a2c326cf43e8119200adaf1e8}\label{class_combat_a86ae984a2c326cf43e8119200adaf1e8}} 
+void \hyperlink{class_combat_a86ae984a2c326cf43e8119200adaf1e8}{Chargement\+Images} ()
+\begin{DoxyCompactList}\small\item\em fonction de chargement des images \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_a775d0bcd7a36020e73c07f52e041379b}\label{class_combat_a775d0bcd7a36020e73c07f52e041379b}} 
+void {\bfseries Aff\+Adjuvants} ()
+\item 
+\mbox{\Hypertarget{class_combat_ae9ed716634bd86b43e18ebd46f16eb1c}\label{class_combat_ae9ed716634bd86b43e18ebd46f16eb1c}} 
+void \hyperlink{class_combat_ae9ed716634bd86b43e18ebd46f16eb1c}{Aff\+Combat} ()
+\begin{DoxyCompactList}\small\item\em fonction affichage du combat (barres de vies, personnages) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_ab8510e544256620b3d177c63ae788e22}\label{class_combat_ab8510e544256620b3d177c63ae788e22}} 
+void \hyperlink{class_combat_ab8510e544256620b3d177c63ae788e22}{Aff\+Barres\+De\+Vie} ()
+\begin{DoxyCompactList}\small\item\em fonction d\textquotesingle{}affichage des barres de vies \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_ac5d7138bc84c675a922864b9d2988284}\label{class_combat_ac5d7138bc84c675a922864b9d2988284}} 
+void \hyperlink{class_combat_ac5d7138bc84c675a922864b9d2988284}{Aff\+Justine} ()
+\begin{DoxyCompactList}\small\item\em fonction d\textquotesingle{}affichage du premier personnage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_aab5729539d4c3fc9ad3202e8528870d2}\label{class_combat_aab5729539d4c3fc9ad3202e8528870d2}} 
+void \hyperlink{class_combat_aab5729539d4c3fc9ad3202e8528870d2}{Aff\+Tancrede} ()
+\begin{DoxyCompactList}\small\item\em fonction d\textquotesingle{}affichage du second personnage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_a9fcf30d489190581ef6dd5d586cbf06b}\label{class_combat_a9fcf30d489190581ef6dd5d586cbf06b}} 
+void \hyperlink{class_combat_a9fcf30d489190581ef6dd5d586cbf06b}{Boucle\+Combat} ()
+\begin{DoxyCompactList}\small\item\em fonction qui génere et calcule le combat \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_a4596b83aaf4f2ba06b25b70edfd3c293}\label{class_combat_a4596b83aaf4f2ba06b25b70edfd3c293}} 
+void \hyperlink{class_combat_a4596b83aaf4f2ba06b25b70edfd3c293}{Adjuvants} (int \&t\+Mama, int \&t\+Attal, int \&t\+Dejou, int \&t\+Felix, int \&t\+Romain, int \&RomainX, int \&RomainY, bool \&obj\+Deja\+Pris)
+\begin{DoxyCompactList}\small\item\em fonction qui gère les adjuvents (évenements spontanés) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_af777bd4e4bc490267d14bf87a3197e09}\label{class_combat_af777bd4e4bc490267d14bf87a3197e09}} 
+void {\bfseries Recuperer\+Effets} (bool \&obj\+Deja\+Pris)
+\item 
+\mbox{\Hypertarget{class_combat_aa9f24c83a1431ce1c094aec40686bce5}\label{class_combat_aa9f24c83a1431ce1c094aec40686bce5}} 
+void \hyperlink{class_combat_aa9f24c83a1431ce1c094aec40686bce5}{Reinit\+Hit\+Box} ()
+\begin{DoxyCompactList}\small\item\em fonction debug qui réinitialise les hibox des personnages a celles de départ. \end{DoxyCompactList}\item 
+bool \hyperlink{class_combat_aa057a33c125327632fc3e995c2983f97}{touche} (const \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} $\ast$a, const \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} $\ast$b)
+\begin{DoxyCompactList}\small\item\em fonction qui calcule si deux rectangles se touchent \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_combat_a4c2dfed2f9da749ae341de25c7427f73}\label{class_combat_a4c2dfed2f9da749ae341de25c7427f73}} 
+\index{Combat@{Combat}!Combat@{Combat}}
+\index{Combat@{Combat}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{Combat()}{Combat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Combat\+::\+Combat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructeur par dÃ©faut 
+
+constructeur par défaut \mbox{\Hypertarget{class_combat_a68fe912e149a1c53ef3bfe9ffb47057b}\label{class_combat_a68fe912e149a1c53ef3bfe9ffb47057b}} 
+\index{Combat@{Combat}!Combat@{Combat}}
+\index{Combat@{Combat}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{Combat()}{Combat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Combat\+::\+Combat (\begin{DoxyParamCaption}\item[{\hyperlink{class_personnage}{Personnage}}]{Ju,  }\item[{\hyperlink{class_personnage}{Personnage}}]{Tancou,  }\item[{bool}]{e,  }\item[{\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point}}]{pos\+Ju,  }\item[{\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point}}]{pos\+Tancou }\end{DoxyParamCaption})}
+
+
+
+constructeur 
+
+constructeur par copie
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_combat_a7288e155937ed0e36f7a8db17b35959e}\label{class_combat_a7288e155937ed0e36f7a8db17b35959e}} 
+\index{Combat@{Combat}!get\+Decor@{get\+Decor}}
+\index{get\+Decor@{get\+Decor}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{get\+Decor()}{getDecor()}}
+{\footnotesize\ttfamily \hyperlink{class_zone}{Zone} Combat\+::get\+Decor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la zone de combat 
+
+\begin{DoxyReturn}{Returns}
+la zone de combat 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_combat_a6e9d7634fc0907b836f71df6a635d0b5}\label{class_combat_a6e9d7634fc0907b836f71df6a635d0b5}} 
+\index{Combat@{Combat}!getevent@{getevent}}
+\index{getevent@{getevent}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{getevent()}{getevent()}}
+{\footnotesize\ttfamily \hyperlink{class_evenement}{Evenement} Combat\+::getevent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}évenement en cours 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}évenement en cours 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_combat_ae336f7422580f19eb41570045847b75c}\label{class_combat_ae336f7422580f19eb41570045847b75c}} 
+\index{Combat@{Combat}!getevent\+Dispo@{getevent\+Dispo}}
+\index{getevent\+Dispo@{getevent\+Dispo}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{getevent\+Dispo()}{geteventDispo()}}
+{\footnotesize\ttfamily bool Combat\+::getevent\+Dispo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la disponibilité d\textquotesingle{}un évenement 
+
+\begin{DoxyReturn}{Returns}
+vrai pour pouvoir initialiser un nouvel évenement, faux sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_combat_a4ecb5ed017bda47a51c9caa0c733f6c5}\label{class_combat_a4ecb5ed017bda47a51c9caa0c733f6c5}} 
+\index{Combat@{Combat}!getJ@{getJ}}
+\index{getJ@{getJ}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{get\+J()}{getJ()}}
+{\footnotesize\ttfamily \hyperlink{class_personnage}{Personnage} Combat\+::getJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur du premier personnage 
+
+\begin{DoxyReturn}{Returns}
+le premier personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_combat_ac42d190e096174b0edbd96144698d89b}\label{class_combat_ac42d190e096174b0edbd96144698d89b}} 
+\index{Combat@{Combat}!get\+PosJ@{get\+PosJ}}
+\index{get\+PosJ@{get\+PosJ}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{get\+Pos\+J()}{getPosJ()}}
+{\footnotesize\ttfamily \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} Combat\+::get\+PosJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la position du premier personnage 
+
+\begin{DoxyReturn}{Returns}
+la position du premier personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_combat_a47cb1210023a7473f985b937718fa6f5}\label{class_combat_a47cb1210023a7473f985b937718fa6f5}} 
+\index{Combat@{Combat}!get\+PosT@{get\+PosT}}
+\index{get\+PosT@{get\+PosT}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{get\+Pos\+T()}{getPosT()}}
+{\footnotesize\ttfamily \hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point} Combat\+::get\+PosT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la position du second personnage 
+
+\begin{DoxyReturn}{Returns}
+la position du second personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_combat_a4a7894cfb76e4c19b4934daafec4619f}\label{class_combat_a4a7894cfb76e4c19b4934daafec4619f}} 
+\index{Combat@{Combat}!getT@{getT}}
+\index{getT@{getT}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{get\+T()}{getT()}}
+{\footnotesize\ttfamily \hyperlink{class_personnage}{Personnage} Combat\+::getT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur du second personnage 
+
+\begin{DoxyReturn}{Returns}
+le second personnage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_combat_ad59833da74f2b727dd42f76eec96bb1f}\label{class_combat_ad59833da74f2b727dd42f76eec96bb1f}} 
+\index{Combat@{Combat}!set\+Decor@{set\+Decor}}
+\index{set\+Decor@{set\+Decor}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{set\+Decor()}{setDecor()}}
+{\footnotesize\ttfamily void Combat\+::set\+Decor (\begin{DoxyParamCaption}\item[{\hyperlink{class_zone}{Zone}}]{d }\end{DoxyParamCaption})}
+
+
+
+mutateur de la zone de combat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & la nouvelle zone de combat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combat_a4d4d1bba42f000b435bd06e957ab8740}\label{class_combat_a4d4d1bba42f000b435bd06e957ab8740}} 
+\index{Combat@{Combat}!setevent@{setevent}}
+\index{setevent@{setevent}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{setevent()}{setevent()}}
+{\footnotesize\ttfamily void Combat\+::setevent (\begin{DoxyParamCaption}\item[{\hyperlink{class_evenement}{Evenement}}]{e }\end{DoxyParamCaption})}
+
+
+
+mutateur de l\textquotesingle{}évenement en cours 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & le nouvel evenement \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combat_a10458f8d5934df3b2b48a9a93f79c3d7}\label{class_combat_a10458f8d5934df3b2b48a9a93f79c3d7}} 
+\index{Combat@{Combat}!setevent\+Dispo@{setevent\+Dispo}}
+\index{setevent\+Dispo@{setevent\+Dispo}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{setevent\+Dispo()}{seteventDispo()}}
+{\footnotesize\ttfamily void Combat\+::setevent\+Dispo (\begin{DoxyParamCaption}\item[{bool}]{e }\end{DoxyParamCaption})}
+
+
+
+mutateur de la disponibilité de l\textquotesingle{}évenement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & vrai pour disponible, faux sinon \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combat_a9497b0462891bb6e9eb4fa43eed87134}\label{class_combat_a9497b0462891bb6e9eb4fa43eed87134}} 
+\index{Combat@{Combat}!setJ@{setJ}}
+\index{setJ@{setJ}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{set\+J()}{setJ()}}
+{\footnotesize\ttfamily void Combat\+::setJ (\begin{DoxyParamCaption}\item[{\hyperlink{class_personnage}{Personnage}}]{Ju }\end{DoxyParamCaption})}
+
+
+
+mutateur du premier personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ju} & le nouveau personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combat_a558ad6162789bf7cde9c69e95470305d}\label{class_combat_a558ad6162789bf7cde9c69e95470305d}} 
+\index{Combat@{Combat}!set\+PosJ@{set\+PosJ}}
+\index{set\+PosJ@{set\+PosJ}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{set\+Pos\+J()}{setPosJ()}}
+{\footnotesize\ttfamily void Combat\+::set\+PosJ (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point}}]{ptJ }\end{DoxyParamCaption})}
+
+
+
+mutateur de la position du premier personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptJ} & \+: la nouvelle position du personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combat_a5ad40745772e874d6672605d41c04add}\label{class_combat_a5ad40745772e874d6672605d41c04add}} 
+\index{Combat@{Combat}!set\+PosT@{set\+PosT}}
+\index{set\+PosT@{set\+PosT}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{set\+Pos\+T()}{setPosT()}}
+{\footnotesize\ttfamily void Combat\+::set\+PosT (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_l___point}{S\+D\+L\+\_\+\+Point}}]{ptT }\end{DoxyParamCaption})}
+
+
+
+mutateur de la position du second personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptT} & \+: la nouvelle position du personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combat_ae18bfeb65c4c3ae29d648e7d32b0e58c}\label{class_combat_ae18bfeb65c4c3ae29d648e7d32b0e58c}} 
+\index{Combat@{Combat}!setT@{setT}}
+\index{setT@{setT}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{set\+T()}{setT()}}
+{\footnotesize\ttfamily void Combat\+::setT (\begin{DoxyParamCaption}\item[{\hyperlink{class_personnage}{Personnage}}]{Tancou }\end{DoxyParamCaption})}
+
+
+
+mutateur du second personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tancou} & le nouveau personnage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combat_aa057a33c125327632fc3e995c2983f97}\label{class_combat_aa057a33c125327632fc3e995c2983f97}} 
+\index{Combat@{Combat}!touche@{touche}}
+\index{touche@{touche}!Combat@{Combat}}
+\subsubsection{\texorpdfstring{touche()}{touche()}}
+{\footnotesize\ttfamily bool Combat\+::touche (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} $\ast$}]{a,  }\item[{const \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+fonction qui calcule si deux rectangles se touchent 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: le premier rectangle \\
+\hline
+{\em b} & \+: le second rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si les deux rectangles se touchent sur au moins un point, faux sinon 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/Combat.\+h\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/\hyperlink{_combat_8cpp}{Combat.\+cpp}\end{DoxyCompactItemize}

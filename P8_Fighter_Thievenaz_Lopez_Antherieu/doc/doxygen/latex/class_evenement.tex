@@ -1,0 +1,224 @@
+\hypertarget{class_evenement}{}\section{Evenement Class Reference}
+\label{class_evenement}\index{Evenement@{Evenement}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_evenement_a95ee309262036c25e627c207035392c1}{Evenement} ()
+\begin{DoxyCompactList}\small\item\em constructeur par dÃ©faut \end{DoxyCompactList}\item 
+\hyperlink{class_evenement_a0aa685bf8285eecc5201885e588c80f9}{Evenement} (\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} zone\+Act, int dure, bool saisiss, \hyperlink{class_effet}{Effet} eff)
+\begin{DoxyCompactList}\small\item\em constructeur \end{DoxyCompactList}\item 
+\hyperlink{class_evenement_a15de89652d5416b1c63488bc97d8cd58}{$\sim$\+Evenement} ()
+\begin{DoxyCompactList}\small\item\em destructeur \end{DoxyCompactList}\item 
+bool \hyperlink{class_evenement_af94f342a661d93294191d1841dfc71e0}{get\+Saisissable} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la saisissabilité de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+int \hyperlink{class_evenement_a22686d84f0b47713247ca71da43fc334}{get\+Duree} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la durée de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} \hyperlink{class_evenement_a4a91ee22a49ed954b2ef912626076a9b}{get\+Zone\+Action} ()
+\begin{DoxyCompactList}\small\item\em accesseur de la zone d\textquotesingle{}action de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+\hyperlink{class_effet}{Effet} \hyperlink{class_evenement_a4ff79a79125be35ae300c32498472fa9}{get\+Effet} ()
+\begin{DoxyCompactList}\small\item\em accesseur de les effets de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+int \hyperlink{class_evenement_ad8b0db779ad72ba0f8e41bd5d32b50aa}{get\+Id\+Event} ()
+\begin{DoxyCompactList}\small\item\em accesseur de l\textquotesingle{}identifiant de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+void \hyperlink{class_evenement_a29c7fa2a4c663b7a923a398fadc1e670}{set\+Zone\+Action} (\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} za)
+\begin{DoxyCompactList}\small\item\em mutateur de la zone d\textquotesingle{}action de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+void \hyperlink{class_evenement_a78ccc562266275619e989b54ad13dc89}{set\+Saisissable} (bool s)
+\begin{DoxyCompactList}\small\item\em mutateur de la saisissabilité de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_evenement_a50d64bae69c4d4888b2e30ab4d930eb1}\label{class_evenement_a50d64bae69c4d4888b2e30ab4d930eb1}} 
+void {\bfseries set\+Duree} (int d)
+\item 
+void \hyperlink{class_evenement_a538f233e9ea7c871043d0b4be112c50f}{set\+Effet} (\hyperlink{class_effet}{Effet} ef)
+\begin{DoxyCompactList}\small\item\em mutateur des effets de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+void \hyperlink{class_evenement_aaf1838c75c9a08291a00d6c6e4a632b7}{set\+Id\+Event} (int i)
+\begin{DoxyCompactList}\small\item\em mutateur de l\textquotesingle{}identifiant de l\textquotesingle{}évenement \end{DoxyCompactList}\item 
+void \hyperlink{class_evenement_a33f3a0e4d88869b5410f4fb230ef4afe}{Nouvel\+Event} ()
+\begin{DoxyCompactList}\small\item\em génere aléatoirement un identifiant d\textquotesingle{}évenement et choisit l\textquotesingle{}évenement correspondant selon la liste disponible \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_evenement_a95ee309262036c25e627c207035392c1}\label{class_evenement_a95ee309262036c25e627c207035392c1}} 
+\index{Evenement@{Evenement}!Evenement@{Evenement}}
+\index{Evenement@{Evenement}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{Evenement()}{Evenement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Evenement\+::\+Evenement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructeur par dÃ©faut 
+
+constructeur par défaut \mbox{\Hypertarget{class_evenement_a0aa685bf8285eecc5201885e588c80f9}\label{class_evenement_a0aa685bf8285eecc5201885e588c80f9}} 
+\index{Evenement@{Evenement}!Evenement@{Evenement}}
+\index{Evenement@{Evenement}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{Evenement()}{Evenement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Evenement\+::\+Evenement (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}}]{zone\+Act,  }\item[{int}]{dure,  }\item[{bool}]{saisiss,  }\item[{\hyperlink{class_effet}{Effet}}]{eff }\end{DoxyParamCaption})}
+
+
+
+constructeur 
+
+constructeur par copie
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone\+Act} & \+: la zone sur laquelle va s\textquotesingle{}appliquer l\textquotesingle{}évenement \\
+\hline
+{\em dure} & \+: durée de l\textquotesingle{}évenement \\
+\hline
+{\em saisiss} & \+: booléen qui décrit si l\textquotesingle{}évenement interagit avec la hitbox du personnage \\
+\hline
+{\em eff} & \+: effets de l\textquotesingle{}évenement \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_evenement_a15de89652d5416b1c63488bc97d8cd58}\label{class_evenement_a15de89652d5416b1c63488bc97d8cd58}} 
+\index{Evenement@{Evenement}!````~Evenement@{$\sim$\+Evenement}}
+\index{````~Evenement@{$\sim$\+Evenement}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{$\sim$\+Evenement()}{~Evenement()}}
+{\footnotesize\ttfamily Evenement\+::$\sim$\+Evenement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructeur 
+
+destructeur de l\textquotesingle{}évenement 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_evenement_a22686d84f0b47713247ca71da43fc334}\label{class_evenement_a22686d84f0b47713247ca71da43fc334}} 
+\index{Evenement@{Evenement}!get\+Duree@{get\+Duree}}
+\index{get\+Duree@{get\+Duree}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{get\+Duree()}{getDuree()}}
+{\footnotesize\ttfamily int Evenement\+::get\+Duree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la durée de l\textquotesingle{}évenement 
+
+\begin{DoxyReturn}{Returns}
+la durée de l\textquotesingle{}évenement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_evenement_a4ff79a79125be35ae300c32498472fa9}\label{class_evenement_a4ff79a79125be35ae300c32498472fa9}} 
+\index{Evenement@{Evenement}!get\+Effet@{get\+Effet}}
+\index{get\+Effet@{get\+Effet}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{get\+Effet()}{getEffet()}}
+{\footnotesize\ttfamily \hyperlink{class_effet}{Effet} Evenement\+::get\+Effet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de les effets de l\textquotesingle{}évenement 
+
+\begin{DoxyReturn}{Returns}
+les effets de l\textquotesingle{}évenement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_evenement_ad8b0db779ad72ba0f8e41bd5d32b50aa}\label{class_evenement_ad8b0db779ad72ba0f8e41bd5d32b50aa}} 
+\index{Evenement@{Evenement}!get\+Id\+Event@{get\+Id\+Event}}
+\index{get\+Id\+Event@{get\+Id\+Event}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{get\+Id\+Event()}{getIdEvent()}}
+{\footnotesize\ttfamily int Evenement\+::get\+Id\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de l\textquotesingle{}identifiant de l\textquotesingle{}évenement 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}identifiant de l\textquotesingle{}évenement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_evenement_af94f342a661d93294191d1841dfc71e0}\label{class_evenement_af94f342a661d93294191d1841dfc71e0}} 
+\index{Evenement@{Evenement}!get\+Saisissable@{get\+Saisissable}}
+\index{get\+Saisissable@{get\+Saisissable}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{get\+Saisissable()}{getSaisissable()}}
+{\footnotesize\ttfamily bool Evenement\+::get\+Saisissable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la saisissabilité de l\textquotesingle{}évenement 
+
+\begin{DoxyReturn}{Returns}
+vrai si l\textquotesingle{}évenement est saisissable, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_evenement_a4a91ee22a49ed954b2ef912626076a9b}\label{class_evenement_a4a91ee22a49ed954b2ef912626076a9b}} 
+\index{Evenement@{Evenement}!get\+Zone\+Action@{get\+Zone\+Action}}
+\index{get\+Zone\+Action@{get\+Zone\+Action}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{get\+Zone\+Action()}{getZoneAction()}}
+{\footnotesize\ttfamily \hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect} Evenement\+::get\+Zone\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+accesseur de la zone d\textquotesingle{}action de l\textquotesingle{}évenement 
+
+\begin{DoxyReturn}{Returns}
+la zone d\textquotesingle{}action de l\textquotesingle{}évenement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_evenement_a33f3a0e4d88869b5410f4fb230ef4afe}\label{class_evenement_a33f3a0e4d88869b5410f4fb230ef4afe}} 
+\index{Evenement@{Evenement}!Nouvel\+Event@{Nouvel\+Event}}
+\index{Nouvel\+Event@{Nouvel\+Event}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{Nouvel\+Event()}{NouvelEvent()}}
+{\footnotesize\ttfamily void Evenement\+::\+Nouvel\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+génere aléatoirement un identifiant d\textquotesingle{}évenement et choisit l\textquotesingle{}évenement correspondant selon la liste disponible 
+
+\mbox{\Hypertarget{class_evenement_a538f233e9ea7c871043d0b4be112c50f}\label{class_evenement_a538f233e9ea7c871043d0b4be112c50f}} 
+\index{Evenement@{Evenement}!set\+Effet@{set\+Effet}}
+\index{set\+Effet@{set\+Effet}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{set\+Effet()}{setEffet()}}
+{\footnotesize\ttfamily void Evenement\+::set\+Effet (\begin{DoxyParamCaption}\item[{\hyperlink{class_effet}{Effet}}]{ef }\end{DoxyParamCaption})}
+
+
+
+mutateur des effets de l\textquotesingle{}évenement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ef} & nouveaux effets a affecter a effet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_evenement_aaf1838c75c9a08291a00d6c6e4a632b7}\label{class_evenement_aaf1838c75c9a08291a00d6c6e4a632b7}} 
+\index{Evenement@{Evenement}!set\+Id\+Event@{set\+Id\+Event}}
+\index{set\+Id\+Event@{set\+Id\+Event}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{set\+Id\+Event()}{setIdEvent()}}
+{\footnotesize\ttfamily void Evenement\+::set\+Id\+Event (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+mutateur de l\textquotesingle{}identifiant de l\textquotesingle{}évenement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & nouvel idenfitiant a affecter a id\+Event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_evenement_a78ccc562266275619e989b54ad13dc89}\label{class_evenement_a78ccc562266275619e989b54ad13dc89}} 
+\index{Evenement@{Evenement}!set\+Saisissable@{set\+Saisissable}}
+\index{set\+Saisissable@{set\+Saisissable}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{set\+Saisissable()}{setSaisissable()}}
+{\footnotesize\ttfamily void Evenement\+::set\+Saisissable (\begin{DoxyParamCaption}\item[{bool}]{s }\end{DoxyParamCaption})}
+
+
+
+mutateur de la saisissabilité de l\textquotesingle{}évenement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & nouvelle valeur a affecter a saisissable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_evenement_a29c7fa2a4c663b7a923a398fadc1e670}\label{class_evenement_a29c7fa2a4c663b7a923a398fadc1e670}} 
+\index{Evenement@{Evenement}!set\+Zone\+Action@{set\+Zone\+Action}}
+\index{set\+Zone\+Action@{set\+Zone\+Action}!Evenement@{Evenement}}
+\subsubsection{\texorpdfstring{set\+Zone\+Action()}{setZoneAction()}}
+{\footnotesize\ttfamily void Evenement\+::set\+Zone\+Action (\begin{DoxyParamCaption}\item[{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}}]{za }\end{DoxyParamCaption})}
+
+
+
+mutateur de la zone d\textquotesingle{}action de l\textquotesingle{}évenement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em za} & nouvelle valeur a affecter a zone\+Action \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/Evenement.\+h\item 
+C\+:/\+Users/\+Hugo/\+Desktop/p8fighter-\/master(3)/src/\hyperlink{_evenement_8cpp}{Evenement.\+cpp}\end{DoxyCompactItemize}

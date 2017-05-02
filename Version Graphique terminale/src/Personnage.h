@@ -57,9 +57,6 @@ class Personnage
 
         //fonctions set
         void setnomImage(const char* i);
-        //void setaspect(Animation an);
-        //void setulti(Competence u);
-        //void setstats(Statistique s);
         void setetat(Etat e);
         void setDeb1D(Action a);
         void setDeb1G(Action a);

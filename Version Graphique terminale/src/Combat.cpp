@@ -1,4 +1,3 @@
-//#include "Combat.h"
 #include <cassert>
 #include <iostream>
 #include <string.h>
@@ -98,7 +97,6 @@ void Combat::setPosT(SDL_Point ptT)
 
 void Combat::AffCombat()
 {
-
 
     AffBarresDeVie();
     AffJustine();
@@ -248,7 +246,6 @@ void Combat::ChargementImages()
     im_VictoireTancrede.loadFromFile("data/VictoireTancrede.png",renderer);
 
 }
-
 
 void Combat::AffBarresDeVie()
 {
@@ -745,7 +742,6 @@ void Combat::BoucleCombat()
 	if (T.getstats().getvie() == 0 || T.getstats().getvie() <= J.getstats().getvie())
 	{
         J.saute();
-
         im_VictoireJustine.draw(renderer, 0, 0, 2000, 1000);
 	}
 	else
@@ -1213,8 +1209,6 @@ bool Combat::touche(const SDL_Rect *a, const SDL_Rect *b)
 
 }
 
-
-
 Combat::~Combat()
 {
     TTF_Quit();
@@ -1222,7 +1216,3 @@ Combat::~Combat()
     SDL_DestroyWindow(window);
     SDL_Quit();
 }
-
-
-
-
